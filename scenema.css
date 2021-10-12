@@ -1,0 +1,88 @@
+#wrapper {
+    width: 80%;
+    margin: auto;
+    min-width: 800px;
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;   
+    align-items: center;
+  }
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 400px;     
+    display: flex;              
+    flex-direction: column;          
+    justify-content: end;   
+    
+}
+
+#homelogo {
+    height: 250px;
+}
+
+#homebuttons {
+    display: flex;
+  align-items: center;
+}
+
+.mainbutt {
+    height: 50px;
+    width: 265px;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: red;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: red;
+}
+
+#filters {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    height: 30px;
+    width: 180px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    background-color: transparent;
+}
+
+option {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.filterbutt {
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(58, 58, 58);
+}
+
+#content {
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;   
+    align-items: center;
+}
+
+#content img {
+    width: 100%;
+    margin: 20px;
+}
+
+footer {
+    color: red;
+    text-align: center;
+}

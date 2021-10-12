@@ -4,77 +4,58 @@
 <html lang="en">
 
 <head>
-    <title>JavaJam Coffee House</title>
+    <title>Home | Scenema</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="cheystyle.css">
+    <link rel="stylesheet" href="scenema.css">
     <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
-<body>
+<body style="background-color: #191919;">
     <div id="wrapper">
         <header>
-            <h1><img src="javajambanner.png"></h1>
+            <img id="homelogo" src="logo.png">
         </header>
-        <div class="columns">
-            <div id="leftcolumn">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="music.html">Music</a>
-                    <a href="jobs.html">Jobs</a>
-                </nav>
-            </div>
-            <div id="rightcolumn">
-                <h2 style="color: #2d0000;">Jobs at JavaJam</h2>
-                <div id="content" style="margin-left: 0px">
-                    <p style="margin-bottom:30px">Want to work at JavaJam? Fill out the form below to start your
-                        application.
-                        Required fields are marked with an asterisk &ast;</p>
-                    <form action="show_post.php" method="post">
-                        <label id="namelab">*Name:</label>
-                            <input 
-                                type="text"  
-                                id="name" 
-                                size=30 
-                                required 
-                                placeholder="Enter your name here"
-                                
-                            ><br><br>
-                        <label id="emaillab">*Email:</label>
-                            <input 
-                                type="text" 
-                                id="email"
-                                size=30 
-                                required 
-                                placeholder="Enter your Email-ID here"
-                                
-                            ><br><br>
-                        <label id="startDatelab">Start Date:</label>
-                            <input 
-                                type="date"
-                                id="startDate"
-                                
-                            ><br><br>
-                    
-                        <label id="explab">*Experience:</label>
-                            <textarea 
-                                id="exp"
-                                type="textarea" 
-                                rows="4" cols="40"
-                                required
-                                placeholder="Enter your past experience here"></textarea>
-                        <br>
-                        <br>
-                            <input type="reset" id="reset" value="Clear">
-                            <input type="submit" id="submit" value="Apply Now">
-                    </form>
-                    <script type = "text/javascript" src = "jobs-handler.js"></script>
-                </div>
-            </div>
+        <div id="homebuttons">
+            <button type="button" class="mainbutt">NOW SHOWING</button>
+            <button type="button" class="mainbutt">CINEMAS</button>
+        </div>
+        <div id="filters">
+            <select name="movie" id="movie" class="filter">
+                <option value="none" selected disabled hidden>SELECT MOVIE</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <select name="cinema" id="cinema" class="filter">
+                <option value="none" selected disabled hidden>SELECT CINEMA</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <select name="day" id="day" class="filter">
+                <option value="none" selected disabled hidden>SELECT DAY</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <select name="time" id="time" class="filter">
+                <option value="none" selected disabled hidden>SELECT TIME</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <button type="button" class="filterbutt">BOOK NOW</button>
+        </div>
+        <div id="content">
+            <img src="shangchibanner.jpg">
+            <img src="shangchibanner.jpg">
         </div>
         <footer>
-            <small><i>Copyright &copy; 2014 JavaJam Coffee House<br>
-                    <a href="mailto:Cheyenne@Loh.com">Cheyenne@Loh.com</a></i></small>
+            <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>
     </div>
 </body>

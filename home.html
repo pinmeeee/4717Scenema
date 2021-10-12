@@ -1,0 +1,82 @@
+<!-- //TEST TEST -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cheystyle.css">
+    <script type="text/javascript" src="jobs-validation.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img src="javajambanner.png"></h1>
+        </header>
+        <div class="columns">
+            <div id="leftcolumn">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="music.html">Music</a>
+                    <a href="jobs.html">Jobs</a>
+                </nav>
+            </div>
+            <div id="rightcolumn">
+                <h2 style="color: #2d0000;">Jobs at JavaJam</h2>
+                <div id="content" style="margin-left: 0px">
+                    <p style="margin-bottom:30px">Want to work at JavaJam? Fill out the form below to start your
+                        application.
+                        Required fields are marked with an asterisk &ast;</p>
+                    <form action="show_post.php" method="post">
+                        <label id="namelab">*Name:</label>
+                            <input 
+                                type="text"  
+                                id="name" 
+                                size=30 
+                                required 
+                                placeholder="Enter your name here"
+                                
+                            ><br><br>
+                        <label id="emaillab">*Email:</label>
+                            <input 
+                                type="text" 
+                                id="email"
+                                size=30 
+                                required 
+                                placeholder="Enter your Email-ID here"
+                                
+                            ><br><br>
+                        <label id="startDatelab">Start Date:</label>
+                            <input 
+                                type="date"
+                                id="startDate"
+                                
+                            ><br><br>
+                    
+                        <label id="explab">*Experience:</label>
+                            <textarea 
+                                id="exp"
+                                type="textarea" 
+                                rows="4" cols="40"
+                                required
+                                placeholder="Enter your past experience here"></textarea>
+                        <br>
+                        <br>
+                            <input type="reset" id="reset" value="Clear">
+                            <input type="submit" id="submit" value="Apply Now">
+                    </form>
+                    <script type = "text/javascript" src = "jobs-handler.js"></script>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <small><i>Copyright &copy; 2014 JavaJam Coffee House<br>
+                    <a href="mailto:Cheyenne@Loh.com">Cheyenne@Loh.com</a></i></small>
+        </footer>
+    </div>
+</body>
+
+</html>

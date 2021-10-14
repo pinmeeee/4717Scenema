@@ -1,7 +1,7 @@
 #wrapper {
     width: 80%;
     margin: auto;
-    min-width: 800px;
+    min-width: 1000px;
     display: flex;              
     flex-direction: column;     
     justify-content: center;   
@@ -12,7 +12,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
+#homepageheader {
     height: 400px;     
     display: flex;              
     flex-direction: column;          
@@ -22,6 +22,42 @@ header {
 
 #homelogo {
     height: 250px;
+}
+
+header {
+    height: 200px;
+    width: 80%;   
+    min-width: 1000px;  
+    display: flex;              
+    flex-direction: row;          
+    justify-content: space-between;   
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#navilogo {
+    height: 180px;
+}
+
+#navibutts {
+    width: 500px;
+    display: flex;              
+    flex-direction: row;          
+    justify-content: space-between; 
+    padding: 30px;
+}
+
+#navibutts {
+    height: 50px;
+    width: 265px;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: red;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: red;
 }
 
 #homebuttons {
@@ -44,6 +80,7 @@ header {
 #filters {
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .filter {
@@ -71,15 +108,35 @@ option {
 }
 
 #content {
+    margin-top: 200px;
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;   
+    align-items: center;
+
+}
+
+#homecontent {
     display: flex;              
     flex-direction: column;     
     justify-content: center;   
     align-items: center;
 }
 
-#content img {
+#homecontent img {
     width: 100%;
     margin: 20px;
+}
+
+#nowshowingcontent {
+    display: flex;              
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+#nowshowingcontent img {
+    height: 300px;
+    margin: 20px 100px;
 }
 
 footer {

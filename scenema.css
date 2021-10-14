@@ -45,10 +45,10 @@ header {
     display: flex;              
     flex-direction: row;          
     justify-content: space-between; 
-    padding: 30px;
+    padding: 35px;
 }
 
-#navibutts {
+.navibutt {
     height: 50px;
     width: 265px;
     margin: 10px;
@@ -107,6 +107,11 @@ option {
     background-color: rgb(58, 58, 58);
 }
 
+#title {
+    color: white;
+    letter-spacing: 3px;
+}
+
 #content {
     margin-top: 200px;
     display: flex;              
@@ -137,6 +142,17 @@ option {
 #nowshowingcontent img {
     height: 300px;
     margin: 20px 100px;
+}
+
+#cinemascontent {
+    display: flex;              
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+#cinemascontent img {
+    height: 280px;
+    margin: 20px 50px;
 }
 
 footer {

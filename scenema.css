@@ -112,6 +112,23 @@ option {
     letter-spacing: 3px;
 }
 
+#smalltitle{
+    color: white;
+    letter-spacing: 3px;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px; 
+}
+#selected{
+    background: white;
+    letter-spacing: 3px;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px;
+}
+
 #content {
     margin-top: 200px;
     display: flex;              
@@ -159,3 +176,16 @@ footer {
     color: red;
     text-align: center;
 }
+
+td {
+    width: 200px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+  }
+  
+  table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  

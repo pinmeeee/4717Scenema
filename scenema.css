@@ -6,7 +6,8 @@
     flex-direction: column;     
     justify-content: center;   
     align-items: center;
-  }
+}
+
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -158,6 +159,8 @@ option {
 
 #nowshowingcontent img {
     height: 300px;
+    width: 220px;
+    object-fit: cover;
     margin: 20px 100px;
 }
 
@@ -167,25 +170,91 @@ option {
     justify-content: center; 
 }
 
-#cinemascontent img {
+#seatsbookingcontent {
+   margin-top: 200px;
+  min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+  flex-direction: row;
+}
+
+#seatsselection {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+#basket {
+    flex-grow:1;
+    min-width: 200px;
+    margin: 30px 0px 40px 50px;
+    background-color: pink;
+}
+
+.cinemalocation img {
     height: 280px;
+    width: 250px;
+    object-fit: cover;
+    margin: 20px 50px;
+}
+
+.cinemalocation p {
+    color: white;
+    text-align: center;
+    font-weight: 200;
     margin: 20px 50px;
 }
 
 footer {
     color: red;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 td {
-    width: 200px;
+    width: 150px;
+    height: 25px;
     text-align: center;
-    border: 1px solid white;
-    padding: 5px;
-  }
+    border: 0px solid white;
+    padding: 3px;
+}
   
-  table {
+#progress {
     border-collapse: separate;
-    border-spacing: 0 15px;
-  }
+    /* border-spacing: 15px 15px; */
+    
+}
   
+
+#seatslayout {
+    /* perspective: 300px; */
+    margin-bottom: 30px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;              
+    align-items: center; 
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 30%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.row {
+    display: flex;
+}
+
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+

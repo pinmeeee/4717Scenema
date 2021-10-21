@@ -59,6 +59,8 @@ header {
     background-color: transparent;
     border-radius: 0.1px;
     border-color: red;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 #homebuttons {
@@ -206,14 +208,13 @@ option {
 
 #movieposter {
     flex-grow: 1;
-    background-color: blue;
 }
 
 #moviedetailbox {
     flex-grow:1;
     min-width: 500px;
     margin: 30px 0px 40px 50px;
-    background-color: pink;
+    padding: 10px;
 }
 
 .cinemalocation img {
@@ -286,8 +287,48 @@ td {
 .showtimerow {
     color: white;
     margin: 30px;
+    border-style: none none solid none;
+    border-color: white;
 }
 
 a:hover {
     color: red;
+}
+
+.detaillabels {
+    color: red;
+    font-weight: 900;
+    font-style: oblique;
+    margin-bottom: -15px;
+}
+
+#detailtitle {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+#detailcast{
+    color: white;
+}
+
+#detaildirector{
+    color: white;
+}
+
+#detailsynopsis{
+    color: white;
+}
+
+#showtimebutt {
+    height: 50px;
+    width: 265px;
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: white;
 }

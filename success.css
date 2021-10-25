@@ -1,0 +1,23 @@
+#successslip {
+    flex-grow: 1;
+    min-width: 600px;
+    min-height: 250px;
+    background-color: rgb(204, 197, 197);
+}
+
+#homebutt {
+    height: 50px;
+    width: 265px;
+    margin: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: white;
+    }
+
+    p {
+        text-align: center
+    }
+    

@@ -1,0 +1,18 @@
+#confirmationslip {
+    flex-grow: 1;
+    min-width: 600px;
+    min-height: 400px;
+    background-color: pink;
+}
+
+#confirmationbutt {
+    height: 50px;
+    width: 265px;
+    margin: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: white;
+  }

@@ -1,0 +1,13 @@
+#showtimecontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 1000px;
+}
+
+.showtimerow {
+    color: white;
+    margin: 30px;
+    border-style: none none solid none;
+    border-color: white;
+}

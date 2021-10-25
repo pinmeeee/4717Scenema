@@ -1,0 +1,55 @@
+#moviedetailscontent {
+    min-width: 1000px;
+      display: flex;
+      justify-content: space-around;
+    flex-direction: row;
+  }
+  
+  #movieposter {
+      flex-grow: 1;
+  }
+  
+  #moviedetailbox {
+      flex-grow:1;
+      min-width: 500px;
+      margin: 30px 0px 40px 50px;
+      padding: 10px;
+  }
+
+  .detaillabels {
+    color: red;
+    font-weight: 900;
+    font-style: oblique;
+    margin-bottom: -15px;
+}
+
+#detailtitle {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+#detailcast{
+    color: white;
+}
+
+#detaildirector{
+    color: white;
+}
+
+#detailsynopsis{
+    color: white;
+}
+
+#showtimebutt {
+  height: 50px;
+  width: 265px;
+  margin: 50px;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border-radius: 0.1px;
+  border-color: white;
+}

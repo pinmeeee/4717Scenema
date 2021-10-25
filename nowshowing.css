@@ -1,0 +1,12 @@
+#nowshowingcontent {
+    display: flex;              
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+#nowshowingcontent img {
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+    margin: 20px 100px;
+}

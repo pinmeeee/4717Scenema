@@ -153,64 +153,6 @@ option {
     margin: 20px;
 }
 
-#nowshowingcontent {
-    display: flex;              
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-
-#nowshowingcontent img {
-    height: 300px;
-    width: 220px;
-    object-fit: cover;
-    margin: 20px 100px;
-}
-
-#cinemascontent {
-    display: flex;              
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-
-#showtimecontent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 1000px;
-}
-
-#moviedetailscontent {
-  min-width: 1000px;
-    display: flex;
-    justify-content: space-around;
-  flex-direction: row;
-}
-
-#movieposter {
-    flex-grow: 1;
-}
-
-#moviedetailbox {
-    flex-grow:1;
-    min-width: 500px;
-    margin: 30px 0px 40px 50px;
-    padding: 10px;
-}
-
-.cinemalocation img {
-    height: 280px;
-    width: 250px;
-    object-fit: cover;
-    margin: 20px 50px;
-}
-
-.cinemalocation p {
-    color: white;
-    text-align: center;
-    font-weight: 200;
-    margin: 20px 50px;
-}
-
 footer {
     color: red;
     text-align: center;
@@ -232,51 +174,7 @@ td {
     
 }
 
-.showtimerow {
-    color: white;
-    margin: 30px;
-    border-style: none none solid none;
-    border-color: white;
-}
-
 a:hover {
     color: red;
 }
 
-.detaillabels {
-    color: red;
-    font-weight: 900;
-    font-style: oblique;
-    margin-bottom: -15px;
-}
-
-#detailtitle {
-    color: white;
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 0px;
-}
-
-#detailcast{
-    color: white;
-}
-
-#detaildirector{
-    color: white;
-}
-
-#detailsynopsis{
-    color: white;
-}
-
-#showtimebutt {
-    height: 50px;
-    width: 265px;
-    margin-top: 50px;
-    font-weight: 300;
-    font-size: 20px;
-    color: white;
-    background-color: transparent;
-    border-radius: 0.1px;
-    border-color: white;
-}

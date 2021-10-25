@@ -7,6 +7,7 @@
     <title>Seats Booking | Scenema</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="scenema.css">
+    <link rel="stylesheet" href="seatsbooking.css">
     <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
@@ -33,6 +34,21 @@
                     </tr>
                 </table>
                 
+                <ul class="showcase">
+                    <li>
+                      <div id="seat" class="seat"></div>
+                      <small class="status" style="font-size: 1em;">N/A</small>
+                    </li>
+                    <li>
+                      <div id="seat" class="seat selected"></div>
+                      <small class="status" style="font-size: 1em;">Selected</small>
+                    </li>
+                    <li>
+                      <div id="seat" class="seat occupied"></div>
+                      <small class="status" style="font-size: 1em;">Occupied</small>
+                    </li>
+                  </ul>
+
                 <div id="seatslayout">
                 
                     <div class="screen"></div>
@@ -72,6 +88,29 @@
                 <p>this is basket</p>
             </div>
         </div>
+        <script>
+     
+            var count=0;
+            var seats=document.getElementsByClassName("seat");
+            for(var i=0;i<seats.length;i++){
+              var item=seats[i];
+              
+              item.addEventListener("click",(event)=>{
+                var price= document.getElementById("movie").value;
+      
+                if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
+                count++;
+                
+                var total=count*price;
+                event.target.classList.add("selected");
+                document.getElementById("count").innerText=count;
+                document.getElementById("total").innerText=total;
+      
+                }
+              })
+            }
+          </script>
+          
         <footer>
             <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>

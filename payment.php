@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Payment | Scenema</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="scenema.css">
     <link rel="stylesheet" href="payment.css">
-    <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
-
 <body>
 <?php
 // Create connection
@@ -38,7 +35,7 @@ $query = "insert into payment details
   if ($result) {
       echo  $db->affected_rows." payment details inserted into database.";
   } else {
-  	  echo "An error has occurred.  The payment details were not added.";
+  	  echo "An error has occurred.  The payment details w not added.";
   }
 
   $db->close();

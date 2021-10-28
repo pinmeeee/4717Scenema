@@ -1,5 +1,6 @@
-
+<!DOCTYPE html>
 <?php include "selectedmovie.php"; ?>
+<?php $movieId = $_GET['id']; ?>
 <html lang="en">
 
 <head>
@@ -11,7 +12,8 @@
 </head>
 
 <body style="background-color: #191919;">
-    <div id="wrapper">
+
+<div id="wrapper">
         <header>
             <img id="navilogo" src="assets/logo.png">
             <div id="navibutts">
@@ -53,13 +55,13 @@
                 <img src="assets/bossbaby.jpeg">
             </div>
             <div id="moviedetailbox">
-                <p id="detailtitle"><?php display_selected_movie(1) ?></p>
+                <p id="detailtitle"><?php display_selected_movie_title($movieId) ?></p>
                 <p class="detaillabels">CAST</p>
-                <p id="detailcast">Tom Hardy, Woody Harrelson, Stephen Graham, Andy Serkis, Michelle Williams, Naomie Harris , Reid Scott</p>
+                <p id="detailcast"><?php display_selected_movie_director($movieId) ?></p>
                 <p class="detaillabels">DIRECTOR</p>
-                <p id="detaildirector">Lee Kwang Soo</p>
+                <p id="detaildirector"><?php display_selected_movie_cast($movieId) ?></p>
                 <p class="detaillabels">SYNOPSIS</p>
-                <p id="detailsynopsis">Venom springs into action when notorious serial killer Cletus Kasady transforms into the evil Carnage.</p>
+                <p id="detailsynopsis"><?php display_selected_movie_synopsis($movieId) ?></p>
                 <button id="showtimebutt">SHOWTIMES</button>
             </div>
         </div>

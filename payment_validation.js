@@ -19,26 +19,6 @@ function chkName() {
     }
 }
 
-function chkEmail() {
-
-    // Get the target node of the event
-
-    var myEmail = document.getElementById("email").value;
-
-    // Test the format of the input Email number
-
-    var pos = myEmail.search(/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,6}$/);
-
-    if (pos != 0) {
-        alert("The Email addess you entered (" + myEmail +
-            ") is not in the correct form. \n" +
-            "Please go back and fix your Email");
-        document.getElementById("email").focus();
-        document.getElementById("email").select();
-        return false;
-    }else return true;
-}
-
 function chkMobile() {
     var myMobile = document.getElementById("mobile").value;
 
@@ -54,6 +34,43 @@ function chkMobile() {
         }
     }else{
         alert("Please fill in your mobile number.");
+        return false;
+    }
+}
+
+function chkEmail() {
+
+    // Get the target node of the event
+    var myEmail = document.getElementById("email").value;
+
+    // Test the format of the input Email number
+    var pos = myEmail.search(/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,6}$/);
+
+    if (pos != 0) {
+        alert("The Email addess you entered (" + myEmail +
+            ") is not in the correct form. \n" +
+            "Please go back and fix your Email");
+        document.getElementById("email").focus();
+        document.getElementById("email").select();
+        return false;
+    }else return true;
+}
+
+function chkCard() {
+    var myCard = document.getElementById("card").value;
+
+    if (myCard.length > 0) {
+        var regexp = /^\d{16}$/;
+        var check = regexp.test(myCard);
+        if (!check) {
+            alert("The number you entered (" + myCard +
+                ") is not in the correct form.");
+            document.getElementById("card").focus();
+            document.getElementById("card").select();
+            return false;
+        }
+    }else{
+        alert("Please fill in your credit card number.");
         return false;
     }
 }

@@ -9,7 +9,7 @@ create table movies
   title char(50) not null,
   director char(50) not null
   cast char(100) not null
-  synopsis varchar(1000)
+  synopsis text
 );
 
 create table showdays
@@ -36,4 +36,12 @@ create table available
   show_id int unsigned not null,
   seat_id int unsigned not null,
   taken number(1)
+);
+
+create table payment
+( payment_id int unsigned not null auto_increment primary key,
+  paymentname char(50) not null,
+  paymentmobile char(8) not null,
+  paymentemail varchar(100) not null,
+  paymentnumber char(16) not null
 );

@@ -28,7 +28,7 @@ if (!$name || !$mobile || !$email || !$card) { //check that user has entered all
     exit;
 }
 
-$query = "insert into payment details
+$query = "insert into payment value
             ('".$name."', '".$mobile."', '".$email."', '".$card."')";
   $result = $db->query($query);
 
@@ -38,7 +38,7 @@ $query = "insert into payment details
   	  echo "An error has occurred.  The payment details w not added.";
   }
 
-  $db->close();
+  mysqli_close($conn);
 ?>
 </body>
 </html>

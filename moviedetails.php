@@ -6,18 +6,18 @@
 <head>
     <title>MOVIE 1 | Scenema</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="scenema.css">
-    <link rel="stylesheet" href="moviedetails.css">
+    <link rel="stylesheet" href="./css/scenema.css">
+    <link rel="stylesheet" href="./css/moviedetails.css">
     <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
-<body style="background-color: #191919;">
+<body>
 
 <div id="wrapper">
         <header>
             <img id="navilogo" src="assets/logo.png">
             <div id="navibutts">
-                <a href="home.html"><button type="button" class="navibutt">HOME</button></a>
+                <a href="index.html"><button type="button" class="navibutt">HOME</button></a>
                 <a href="nowshowing.html"><button type="button" class="navibutt">MOVIES</button></a>
                 <a href="cinemas.html"><button type="button" class="navibutt">CINEMAS</button></a>
             </div>
@@ -52,7 +52,7 @@
     </div>
         <div id="moviedetailscontent">
             <div id="movieposter">
-                <img src="assets/bossbaby.jpeg">
+                <?php display_selected_movie_poster($movieId) ?>
             </div>
             <div id="moviedetailbox">
                 <p id="detailtitle"><?php display_selected_movie_title($movieId) ?></p>

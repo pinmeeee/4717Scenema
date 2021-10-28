@@ -6,17 +6,17 @@
 <head>
     <title>Our Cinemas | Scenema</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="scenema.css">
-    <link rel="stylesheet" href="cinema.css">
+    <link rel="stylesheet" href="./css/scenema.css">
+    <link rel="stylesheet" href="./css/cinema.css">
     <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
-<body style="background-color: #191919;">
+<body>
     <div id="wrapper">
         <header>
             <img id="navilogo" src="assets/logo.png">
             <div id="navibutts">
-                <a href="home.html"><button type="button" class="navibutt">HOME</button></a>
+                <a href="index.html"><button type="button" class="navibutt">HOME</button></a>
                 <a href="nowshowing.html"><button type="button" class="navibutt">MOVIES</button></a>
                 <a href="cinemas.html"><button type="button" class="navibutt">CINEMAS</button></a>
             </div>
@@ -53,15 +53,24 @@
             <div><h1 id="title">OUR CINEMAS</h1></div>
             <div id="cinemascontent">
                 <div class="cinemalocation">
-                    <img src="assets/clementi.png">
+                    <a href="./showtimecin.php?id=1">
+                        <img src="assets/clementi.png">
+                        <div class="cinematitle">CLEMENTI</div>
+                    </a>
                     <p>3155 Commonwealth Ave W<br>Singapore 129588</p>
                 </div>
                 <div class="cinemalocation">
-                    <img src="assets/jurongpoint.png">
+                    <a href="./showtimecin.php?id=2">
+                        <img src="assets/jurongpoint.png">
+                        <div class="cinematitle">JURONG</div>
+                    </a>
                     <p>1 Jurong West Central 2<br> Singapore 648886</p>
                 </div>
                 <div class="cinemalocation">
-                    <img src="assets/amk.png">
+                    <a href="./showtimecin.php?id=3">
+                        <img src="assets/amk.png">
+                        <div class="cinematitle">ANG MO KIO</div>
+                    </a>
                     <p>53 Ang Mo Kio Ave 3<br>Singapore 569933</p>
                 </div>
             </div>

@@ -39,3 +39,21 @@ function chkEmail() {
     }else return true;
 }
 
+function chkMobile() {
+    var myMobile = document.getElementById("mobile").value;
+
+    if (myMobile.length > 0) {
+        var regexp = /^\d{8}$/;
+        var check = regexp.test(myMobile);
+        if (!check) {
+            alert("The number you entered (" + myMobile +
+                ") is not in the correct form.");
+            document.getElementById("mobile").focus();
+            document.getElementById("mobile").select();
+            return false;
+        }
+    }else{
+        alert("Please fill in your mobile number.");
+        return false;
+    }
+}

@@ -103,6 +103,11 @@
                 </table>
             </div>
         </div>
+
+        <div id="bookingbuttons">
+            <a href="confirmation.php"><button type="button" class="bookingbutt">BOOK NOW</button></a>
+        </div>
+
         <footer>
             <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>

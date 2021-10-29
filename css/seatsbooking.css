@@ -101,4 +101,21 @@
     font-weight: 100px;
   }
 
- 
+  #bookingbuttons {
+    display: flex;
+  align-items: center;
+}
+
+.bookingbutt {
+    height: 60px;
+    width: 150px;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: red;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: red;
+        border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

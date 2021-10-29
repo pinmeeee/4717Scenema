@@ -101,10 +101,10 @@
                         </td>
                     </tr>   
                 </table>
-                <div id="bookingbuttons">
+            </div>
+            <div id="bookingbuttons">
             <a href="confirmation.php"><button type="button" class="bookingbutt">BOOK NOW</button></a>
         </div>
-            </div>
         </div>
 
         <footer>

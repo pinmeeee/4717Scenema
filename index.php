@@ -16,8 +16,8 @@
             <img id="homelogo" src="assets/logo.png">
         </div>
         <div id="homebuttons">
-            <a href="nowshowing.html"><button type="button" class="mainbutt">MOVIES</button></a>
-            <a href="cinemas.html"><button type="button" class="mainbutt">CINEMAS</button></a>
+            <a href="nowshowing.php"><button type="button" class="mainbutt">MOVIES</button></a>
+            <a href="cinemas.php"><button type="button" class="mainbutt">CINEMAS</button></a>
         </div>
         <div id="filters">
             <form action="./dropdown.php" method="get">

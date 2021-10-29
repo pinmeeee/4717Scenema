@@ -11,7 +11,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/scenema.css">
     <link rel="stylesheet" href="./css/seatsbooking.css">
-    <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
 <body>

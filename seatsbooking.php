@@ -86,8 +86,21 @@
                 
                 </div>
             </div>
-            <div id="basket">
-                <p>this is basket</p>
+            <div id="basketcontent">
+                <table class="baskettable">
+                    <tr>
+                        <th colspan="2">Your Basket</td>
+                    </tr>
+                    <tr>
+                        <td>Movie 1</td>
+                        <td>No. of tickets: <span id="count">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>Total Cost: $</td>
+                        <td><span id="total">0</span>
+                        </td>
+                    </tr>   
+                </table>
             </div>
         </div>
         <footer>
@@ -96,4 +109,27 @@
     </div>
 </body>
 
+<script>
+     
+    var count=0;
+    var seats=document.getElementsByClassName("seat");
+    for(var i=0;i<seats.length;i++){
+      var item=seats[i];
+      
+      item.addEventListener("click",(event)=>{
+        var price= 10;
+
+        if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
+        count++;
+        
+        var total=count*price;
+        event.target.classList.add("selected");
+        document.getElementById("count").innerText=count;
+        document.getElementById("total").innerText=total;
+
+        }
+      })
+    }
+  </script>
+  
 </html>

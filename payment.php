@@ -3,8 +3,8 @@
 <head>
     <title>Payment | Scenema</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="scenema.css">
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="./css/scenema.css">
+    <link rel="stylesheet" href="./css/payment.css">
 </head>
 <body>
 <?php

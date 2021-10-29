@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include "cinemashowtimes.php"; ?>
+<?php $movId = $_GET['id']; ?>
 <html lang="en">
 
 <head>
@@ -49,68 +51,46 @@
                 <button type="button" class="filterbutt">BOOK NOW</button>
             </div>
             <div id="showtimecontent">
-                <h1 id="title">SHOWTIMES FOR: MOVIE 1</h1>
+                <h1 id="title"><?php display_movie_name($movId) ?> 
+                    
+                 </h1>
                 <table class="showtimerow">
                     <tr>
-                        <td rowspan="3">Cinema 1</td>
+                        <td rowspan="2">Clementi Mall</td>
                         <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
+                        <td>TUE (2JAN)</td>
+                        <td>WED (3JAN)</td>
                     </tr>
                     <tr>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                    </tr>
-                    <tr>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
+                        <td><?php display_showtimes(1, 1, $movId) ?></td>
+                        <td><?php display_showtimes(1, 2, $movId) ?></td>
+                        <td><?php display_showtimes(1, 3, $movId) ?></td>
                     </tr>
                 </table>
                 <table class="showtimerow">
                     <tr>
-                        <td rowspan="3">Cinema 2</td>
+                        <td rowspan="2">Jurong Point</td>
                         <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
+                        <td>TUE (2JAN)</td>
+                        <td>WED (3JAN)</td>
                     </tr>
                     <tr>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                    </tr>
-                    <tr>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
+                        <td><?php display_showtimes(2, 1, $movId) ?></td>
+                        <td><?php display_showtimes(2, 2, $movId) ?></td>
+                        <td><?php display_showtimes(2, 3, $movId) ?></td>
                     </tr>
                 </table>
                 <table class="showtimerow">
                     <tr>
-                        <td rowspan="3">Cinema 3</td>
+                        <td rowspan="2">AMK Hub</td>
                         <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
-                        <td>MON (1JAN)</td>
+                        <td>TUE (2JAN)</td>
+                        <td>WED (3JAN)</td>
                     </tr>
                     <tr>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                    </tr>
-                    <tr>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
-                        <td><a>10:00AM</a></td>
+                        <td><?php display_showtimes(3, 1, $movId) ?></td>
+                        <td><?php display_showtimes(3, 2, $movId) ?></td>
+                        <td><?php display_showtimes(3, 3, $movId) ?></td>
                     </tr>
                 </table>
             </div>

@@ -1,24 +1,25 @@
-<!-- //TEST TEST -->
-
 <!DOCTYPE html>
+<?php include "selectedmovie.php"; ?>
+<?php $movieId = $_GET['id']; ?>
 <html lang="en">
 
 <head>
     <title>MOVIE 1 | Scenema</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="scenema.css">
-    <link rel="stylesheet" href="moviedetails.css">
+    <link rel="stylesheet" href="./css/scenema.css">
+    <link rel="stylesheet" href="./css/moviedetails.css">
     <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
-<body style="background-color: #191919;">
-    <div id="wrapper">
+<body>
+
+<div id="wrapper">
         <header>
             <img id="navilogo" src="assets/logo.png">
             <div id="navibutts">
-                <button type="button" class="navibutt">HOME</button>
-                <button type="button" class="navibutt">MOVIES</button>
-                <button type="button" class="navibutt">CINEMAS</button>
+                <a href="index.html"><button type="button" class="navibutt">HOME</button></a>
+                <a href="nowshowing.html"><button type="button" class="navibutt">MOVIES</button></a>
+                <a href="cinemas.html"><button type="button" class="navibutt">CINEMAS</button></a>
             </div>
         </header>
 <div id="content">
@@ -51,17 +52,17 @@
     </div>
         <div id="moviedetailscontent">
             <div id="movieposter">
-                <img src="assets/bossbaby.jpeg">
+                <?php display_selected_movie_poster($movieId) ?>
             </div>
             <div id="moviedetailbox">
-                <p id="detailtitle">Boss Baby</p>
+                <p id="detailtitle"><?php display_selected_movie_title($movieId) ?></p>
                 <p class="detaillabels">CAST</p>
-                <p id="detailcast">Tom Hardy, Woody Harrelson, Stephen Graham, Andy Serkis, Michelle Williams, Naomie Harris , Reid Scott</p>
+                <p id="detailcast"><?php display_selected_movie_director($movieId) ?></p>
                 <p class="detaillabels">DIRECTOR</p>
-                <p id="detaildirector">Lee Kwang Soo</p>
+                <p id="detaildirector"><?php display_selected_movie_cast($movieId) ?></p>
                 <p class="detaillabels">SYNOPSIS</p>
-                <p id="detailsynopsis">Venom springs into action when notorious serial killer Cletus Kasady transforms into the evil Carnage.</p>
-                <button id="showtimebutt">SHOWTIMES</button>
+                <p id="detailsynopsis"><?php display_selected_movie_synopsis($movieId) ?></p>
+                <?php display_showtime_button($movieId) ?>
             </div>
         </div>
         <footer>

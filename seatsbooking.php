@@ -1,7 +1,10 @@
-<!-- //TEST TEST -->
 
 <!DOCTYPE html>
 <html lang="en">
+<?php include "cinemashowtimes.php"; ?>
+<?php $showId = $_GET['id']; ?>
+
+
 
 <head>
     <title>Seats Booking | Scenema</title>
@@ -19,7 +22,12 @@
         
         <div id="seatsbookingcontent">
             <div id="seatsselection">
-                <h2 id="title">MOVIE 1</h2>
+                <h2 id="title">
+                    <?php display_show_movie($showId) ?>&nbsp;
+                    @<?php display_show_cinema($showId) ?>&nbsp;
+                    <?php display_show_day($showId) ?>&nbsp;
+                    <?php display_show_time($showId) ?>&nbsp;
+                </h2>
                 <table id="progress">
                     <tr>
                         <td id="selected">SELECT SEATS</td>
@@ -48,10 +56,8 @@
                 
                     <div class="screen"></div>
                 
-                    <form action="show_post.php" method="post"></form>
                     <div class="row">
-                        <div id="seat" class="seat">
-                        </div>
+                        <div id="seat" class="seat"></div>
                         <div id="seat" class="seat"></div>
                         <div id="seat" class="seat"></div>
                         <div id="seat" class="seat"></div>
@@ -90,26 +96,5 @@
         </footer>
     </div>
 </body>
-<script>
-     
-    var count=0;
-    var seats=document.getElementsByClassName("seat");
-    for(var i=0;i<seats.length;i++){
-      var item=seats[i];
-      
-      item.addEventListener("click",(event)=>{
-        var price= document.getElementById("movie").value;
 
-        if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
-        count++;
-        
-        var total=count*price;
-        event.target.classList.add("selected");
-        document.getElementById("count").innerText=count;
-        document.getElementById("total").innerText=total;
-
-        }
-      })
-    }
-  </script>
 </html>

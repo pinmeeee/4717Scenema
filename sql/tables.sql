@@ -7,22 +7,22 @@ create table cinemas
 create table movies
 ( movie_id int unsigned not null auto_increment primary key,
   title char(50) not null,
-  director char(50) not null
-  cast char(100) not null
+  director char(50) not null,
+  cast char(100) not null,
   synopsis text
 );
 
 create table showdays
 ( day_id int unsigned not null auto_increment primary key,
-  day char(50) not null,
+  day char(50) not null
 );
 
 create table showtimes
 ( show_id int unsigned not null auto_increment primary key,
   cinema_id int unsigned not null,
   day_id int unsigned not null,
-  movie_id int unsigned not null
-  showtime time(0) not null
+  movie_id int unsigned not null,
+  showtime time not null
 );
 
 create table seats
@@ -35,7 +35,7 @@ create table available
 ( res_id int unsigned not null auto_increment primary key,
   show_id int unsigned not null,
   seat_id int unsigned not null,
-  taken number(1)
+  taken bool
 );
 
 create table payment

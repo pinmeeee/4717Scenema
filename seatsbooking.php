@@ -108,7 +108,7 @@
         </div>
 
         <footer>
-            <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
+            <small><i>COpyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>
     </div>
 </body>

@@ -48,6 +48,9 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+/* .seat input{
+  display: none;
+} */
 
 .showcase {
     background: rgba(0, 0, 0, 0.1);

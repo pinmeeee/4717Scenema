@@ -48,8 +48,10 @@
                 
                     <div class="screen"></div>
                 
+                    <form action="show_post.php" method="post"></form>
                     <div class="row">
-                        <div id="seat" class="seat"></div>
+                        <div id="seat" class="seat">
+                        </div>
                         <div id="seat" class="seat"></div>
                         <div id="seat" class="seat"></div>
                         <div id="seat" class="seat"></div>
@@ -88,5 +90,26 @@
         </footer>
     </div>
 </body>
+<script>
+     
+    var count=0;
+    var seats=document.getElementsByClassName("seat");
+    for(var i=0;i<seats.length;i++){
+      var item=seats[i];
+      
+      item.addEventListener("click",(event)=>{
+        var price= document.getElementById("movie").value;
 
+        if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
+        count++;
+        
+        var total=count*price;
+        event.target.classList.add("selected");
+        document.getElementById("count").innerText=count;
+        document.getElementById("total").innerText=total;
+
+        }
+      })
+    }
+  </script>
 </html>

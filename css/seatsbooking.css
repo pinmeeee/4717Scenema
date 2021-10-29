@@ -11,12 +11,21 @@
  }
  
  
- #basket {
+ #basketcontent {
      flex-grow:1;
-     min-width: 200px;
+     min-width: 300px;
      margin: 30px 0px 40px 50px;
-     background-color: pink;
+     background-color: rgba(255, 255, 255, 0.733);
  }
+
+ .baskettable td{
+  text-align: left;
+  padding: 20px 0px 100px 5px;
+}
+
+.baskettable {
+  border-collapse: separate;
+}
 
  #seatslayout {
     /* perspective: 300px; */
@@ -91,3 +100,5 @@
     font-size: 13px;
     font-weight: 100px;
   }
+
+ 

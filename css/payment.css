@@ -22,15 +22,15 @@ input#name, input#mobile, input#email, input#card
     margin-top: 10px; 
     }
 
-    #paymentbutt {
-        height: 50px;
-        width: 265px;
-        margin: 50px;
-        font-weight: 300;
-        font-size: 20px;
-        color: white;
-        background-color: transparent;
-        border-radius: 0.1px;
-        border-color: white;
-      }
+#paymentbutt {
+    height: 50px;
+    width: 265px;
+    margin: 50px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 0.1px;
+    border-color: white;
+    }
 

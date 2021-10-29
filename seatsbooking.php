@@ -92,7 +92,7 @@
                         <th colspan="2">Your Basket</td>
                     </tr>
                     <tr>
-                        <td>Movie 1</td>
+                        <td><?php display_show_movie($showId) ?>&nbsp;</td>
                         <td>No. of tickets: <span id="count">0</span></td>
                     </tr>
                     <tr>
@@ -131,5 +131,5 @@
       })
     }
   </script>
-  
+
 </html>

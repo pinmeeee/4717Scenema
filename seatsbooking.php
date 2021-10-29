@@ -102,13 +102,12 @@
                     </tr>   
                 </table>
             </div>
-            <div id="bookingbuttons">
+        </div>
+        <div id="bookingbuttons">
             <a href="confirmation.php"><button type="button" class="bookingbutt">BOOK NOW</button></a>
         </div>
-        </div>
-
         <footer>
-            <small><i>COpyright &copy; 2021 Scenema Cinemas</i></small>
+            <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>
     </div>
 </body>

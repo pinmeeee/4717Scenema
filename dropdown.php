@@ -3,11 +3,6 @@
         $cinemaId = $_GET['cinemaSelected'];
         $dayId = $_GET['daySelected'];
 
-        echo $movieId;
-
-
-
-        
         $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
 
             if (!$conn) {

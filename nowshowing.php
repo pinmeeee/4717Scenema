@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<?php include "cinemashowtimes.php"; ?>
 <?php include "dropdown.php"; ?>
-<?php $movId = $_GET['id']; ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Showtimes | Scenema</title>
+    <title>Now Showing | Scenema</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/scenema.css">
-    <link rel="stylesheet" href="./css/showtime.css">
+    <link rel="stylesheet" href="./css/nowshowing.css">
     <script type="text/javascript" src="filter.js"></script>
 </head>
 
@@ -17,7 +15,7 @@
         <header>
             <img id="navilogo" src="assets/logo.png">
             <div id="navibutts">
-            <a href="index.php"><button type="button" class="navibutt">HOME</button></a>
+                <a href="index.php"><button type="button" class="navibutt">HOME</button></a>
                 <a href="nowshowing.php"><button type="button" class="navibutt">MOVIES</button></a>
                 <a href="cinemas.php"><button type="button" class="navibutt">CINEMAS</button></a>
             </div>
@@ -56,49 +54,13 @@
                 <button type="submit" class="filterbutt">BOOK NOW</button>
                 </form>
             </div>
-            <div id="showtimecontent">
-                <h1 id="title"><?php display_movie_name($movId) ?> 
-                    
-                 </h1>
-                <table class="showtimerow">
-                    <tr>
-                        <td rowspan="2">Clementi Mall</td>
-                        <td>MON (1JAN)</td>
-                        <td>TUE (2JAN)</td>
-                        <td>WED (3JAN)</td>
-                    </tr>
-                    <tr>
-                        <td><?php display_showtimes(1, 1, $movId) ?></td>
-                        <td><?php display_showtimes(1, 2, $movId) ?></td>
-                        <td><?php display_showtimes(1, 3, $movId) ?></td>
-                    </tr>
-                </table>
-                <table class="showtimerow">
-                    <tr>
-                        <td rowspan="2">Jurong Point</td>
-                        <td>MON (1JAN)</td>
-                        <td>TUE (2JAN)</td>
-                        <td>WED (3JAN)</td>
-                    </tr>
-                    <tr>
-                        <td><?php display_showtimes(2, 1, $movId) ?></td>
-                        <td><?php display_showtimes(2, 2, $movId) ?></td>
-                        <td><?php display_showtimes(2, 3, $movId) ?></td>
-                    </tr>
-                </table>
-                <table class="showtimerow">
-                    <tr>
-                        <td rowspan="2">AMK Hub</td>
-                        <td>MON (1JAN)</td>
-                        <td>TUE (2JAN)</td>
-                        <td>WED (3JAN)</td>
-                    </tr>
-                    <tr>
-                        <td><?php display_showtimes(3, 1, $movId) ?></td>
-                        <td><?php display_showtimes(3, 2, $movId) ?></td>
-                        <td><?php display_showtimes(3, 3, $movId) ?></td>
-                    </tr>
-                </table>
+            <div>
+                <h1 id="title">NOW SHOWING</h1>
+            </div>
+            <div id="nowshowingcontent">
+                <a href="./moviedetails.php?id=1"><img src="assets/pawpatrol.jpeg"></a>
+                <a href="./moviedetails.php?id=2"><img src="assets/shangchi.jpeg"></a>
+                <a href="./moviedetails.php?id=3"><img src="assets/bossbaby.jpeg"></a>
             </div>
         </div>
         <footer>

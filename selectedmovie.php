@@ -87,4 +87,10 @@ function display_selected_movie_poster($id) {
 	}
 }
 
+function display_showtime_button($id) {
+	echo "<a id=\"showtimebutt\" href=\"./showtimemov.php?id=";
+	echo $id;
+	echo "\">SHOWTIMES</a>";
+}
+
 ?>

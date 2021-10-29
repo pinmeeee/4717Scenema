@@ -1,7 +1,10 @@
-<!-- //TEST TEST -->
 
 <!DOCTYPE html>
 <html lang="en">
+<?php include "cinemashowtimes.php"; ?>
+<?php $showId = $_GET['id']; ?>
+
+
 
 <head>
     <title>Seats Booking | Scenema</title>
@@ -19,7 +22,12 @@
         
         <div id="seatsbookingcontent">
             <div id="seatsselection">
-                <h2 id="title">MOVIE 1</h2>
+                <h2 id="title">
+                    <?php display_show_movie($showId) ?>&nbsp;
+                    @<?php display_show_cinema($showId) ?>&nbsp;
+                    <?php display_show_day($showId) ?>&nbsp;
+                    <?php display_show_time($showId) ?>&nbsp;
+                </h2>
                 <table id="progress">
                     <tr>
                         <td id="selected">SELECT SEATS</td>

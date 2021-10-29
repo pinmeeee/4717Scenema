@@ -62,7 +62,7 @@
                 <p id="detaildirector"><?php display_selected_movie_cast($movieId) ?></p>
                 <p class="detaillabels">SYNOPSIS</p>
                 <p id="detailsynopsis"><?php display_selected_movie_synopsis($movieId) ?></p>
-                <button id="showtimebutt">SHOWTIMES</button>
+                <?php display_showtime_button($movieId) ?>
             </div>
         </div>
         <footer>

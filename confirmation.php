@@ -26,8 +26,30 @@
         </table>
             <h1 id="title">CONFIRMATION</h1>
     </div>
-        <div id="confirmationslip">
-            <p>confirmation slip</p>
+        <div id="confirmationcontent">
+        <table class="confirmationtable">
+                    <tr>
+                        <th colspan="4">Your Basket</td>
+                    </tr>
+                    <tr>
+                        <td><?php display_show_movie($showId) ?>;</td>
+                    </tr>
+                    <tr>
+                        <td>Showing at <?php display_show_cinema($showId) ?>,;<?php display_show_day($showId) ?>&nbsp,;<?php display_show_time($showId) ?>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>ITEM</td>
+                        <td>COST</td>
+                        <td>QUANTITY</td>
+                        <td>SUBTOTAL</td>
+                    </tr>
+                    <tr>
+                        <td>weekday standard</td>
+                        <td>COST</td>
+                        <td>QUANTITY</td>
+                        <td>SUBTOTAL</td>
+                    </tr>   
+                </table>
         </div>
 
     <div id="homebuttons">

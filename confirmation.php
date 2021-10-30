@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include "cinemashowtimes.php"; ?>
+<?php $showId = $_GET['id']; ?>
 
 <head>
     <title>Confirmation | Scenema</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/scenema.css">
     <link rel="stylesheet" href="./css/confirmation.css">
-    <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
 <body>

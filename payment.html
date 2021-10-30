@@ -32,6 +32,7 @@
                         type="text"  
                         id="name" 
                         size=50 
+                        onchange="validateName()"
                         required 
                         placeholder="Enter your name here"
                     ></div><br><br>
@@ -43,7 +44,9 @@
                     name="mobile" 
                     size=50
                     maxlength="8" 
-                    required placeholder = "Enter your mobile here"
+                    onchange="validateMobile()"
+                    required 
+                    placeholder = "Enter your mobile here"
                     ></div><br><br>
 
                 <div>   
@@ -52,6 +55,7 @@
                         type="text" 
                         id="email"
                         size=50 
+                        onchange="validateEmail()"
                         required 
                         placeholder="Enter your Email-ID here"
                     ></div> <br><br>
@@ -63,7 +67,9 @@
                     id="card" 
                     size=50
                     maxlength="16" 
-                    required placeholder = "Enter your Credit Card number here"
+                    onchange="validateCard()"
+                    required 
+                    placeholder = "Enter your Credit Card number here"
                     ></div><br><br>
             </form>
         </div>

@@ -54,8 +54,8 @@
         </div>
 
     <div id="homebuttons">
-    <button id="confirmationbutt">GO BACK</button>
-    <button id="confirmationbutt">PROCEED TO PAYMENT</button>
+    <a href="seatsbooking.php"><button id="confirmationbutt">GO BACK</button></a>
+    <a href="payment.php"><button id="confirmationbutt">PROCEED TO PAYMENT</button></a>
     </div>
     </div>
 </body>

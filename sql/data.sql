@@ -641,5 +641,9 @@ values
 ('27', '19', '0'),
 ('27', '20', '0');
 
-
+insert into payment (paymentname, paymentmobile, paymentemail, paymentnumber)
+values
+('John Tan','98746375','johntan@gmail.com','4486094788641136'),
+('Amber Chan','90364826','amberC@yahoo.com','4098264860286415'),
+('Jimmy Choo','86649207','jimchoo@gmail.com','409872648571370');
 

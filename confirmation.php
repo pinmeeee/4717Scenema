@@ -25,7 +25,7 @@
                 <td id="smalltitle">SUCCESSFUL BOOKING</td>
             </tr>
         </table>
-            <h1 id="title">confirmstion</h1>
+            <h1 id="title">CONFIRMATION</h1>
     </div>
         <div id="confirmationcontent">
         <table class="confirmationtable">

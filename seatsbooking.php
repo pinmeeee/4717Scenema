@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "cinemashowtimes.php"; ?>
+<?php include "seatsidgen.php"; ?>
 <?php $showId = $_GET['id']; ?>
 <?php require_once('seatselection.php') ?>
 
@@ -55,36 +56,15 @@
                 <div id="seatslayout">
                 
                     <div class="screen"></div>
-                
+
+                    <?php seatsidgen() ?>
                     <div class="row">
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
+                        <div id="test1" class="seat"></div>
+                        <div id="test2" class="seat occupied"></div>
+                        <div id="test3" class="seat occupied"></div>
+                        <div id="test4" class="seat"></div>
+                        <div id="test5" class="seat"></div>
                     </div>
-                    <div class="row">
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat occupied"></div>
-                        <div id="seat" class="seat occupied"></div>
-                    </div>
-                    <div class="row">
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat occupied"></div>
-                        <div id="seat" class="seat occupied"></div>
-                    </div>
-                    <div class="row">
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                        <div id="seat" class="seat"></div>
-                    </div>
-                
                 </div>
             </div>
             <div id="basketcontent">
@@ -102,6 +82,7 @@
                         </td>
                     </tr>   
                 </table>
+                <div>Seats selected: <span id="seatsSelected">none</span></div>
             </div>
         </div>
         <div id="bookingbuttons">
@@ -117,23 +98,44 @@
      
     var count=0;
     var seats=document.getElementsByClassName("seat");
+    var seatSel= [];
     for(var i=0;i<seats.length;i++){
       var item=seats[i];
       
       item.addEventListener("click",(event)=>{
         var price= 10;
+        
 
         if (!event.target.classList.contains('occupied') && !event.target.classList.contains('selected') ){
-        count++;
-        
-        var total=count*price;
-        event.target.classList.add("selected");
-        document.getElementById("count").innerText=count;
-        document.getElementById("total").innerText=total;
+            count++;
+            seatSel.push(event.target.id);
+            var total=count*price;
+            event.target.classList.add("selected");
+            document.getElementById("count").innerText=count;
+            document.getElementById("total").innerText=total;
+            document.getElementById("seatsSelected").innerText=seatSel;
+
+        }else if (event.target.classList.contains('selected') ){
+            count--;
+
+            var index = seatSel.indexOf(event.target.id);
+            if (index > -1) {
+                seatSel.splice(index, 1);
+            }
+            var total=count*price;
+            event.target.classList.remove("selected");
+            document.getElementById("count").innerText=count;
+            document.getElementById("total").innerText=total;
+            document.getElementById("seatsSelected").innerText=seatSel;
+        }else {
 
         }
       })
     }
+
+
+   
+
   </script>
 
 </html>

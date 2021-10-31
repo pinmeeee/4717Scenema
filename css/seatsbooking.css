@@ -79,6 +79,11 @@
     background-color: #444451;
   }
 
+  .seat.occupied:hover {
+    background-color: #444451;
+    cursor: not-allowed;
+  }
+
 
   .seat:not(.occupied):hover {
     cursor: pointer;

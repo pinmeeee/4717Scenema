@@ -14,23 +14,26 @@ if(isset($_POST['submit'])){//to run PHP script on submit
 	$email=$_POST['email'];
 	$card=$_POST['card'];
 	
-if (!$name || !$mobile || !$email || !$card) { //check that user has entered all fields
-    echo "You have not entered all the required details.<br />"
-            ."Please go back and try again.";
-    exit;
+    if (!$name || !$mobile || !$email || !$card) { //check that user has entered all fields
+        echo "You have not entered all the required details.<br />"
+                ."Please go back and try again.";
+        exit;
+    }
+
+    $query = "insert into payment value
+                ('".$name."', '".$mobile."', '".$email."', '".$card."')";
+    $result = $db->query($query);
+
+    if ($result) {
+        echo  $db->affected_rows." payment details inserted into database.";
+    } else {
+        echo "An error has occurred.  The payment details w not added.";
+    }
 }
 
-$query = "insert into payment value
-            ('".$name."', '".$mobile."', '".$email."', '".$card."')";
-  $result = $db->query($query);
+    mysqli_close($conn);
 
-  if ($result) {
-      echo  $db->affected_rows." payment details inserted into database.";
-  } else {
-  	  echo "An error has occurred.  The payment details w not added.";
-  }
 
-  mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>

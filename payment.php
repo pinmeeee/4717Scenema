@@ -74,7 +74,6 @@
             </form>
         </div>
         <div id="homebuttons">
-            <input type="submit" id="return" value="GO BACK" id="paymentbutt">
             <input type="submit" id="submit" value="PAY" id="paymentbutt">
             </div>
             <footer>

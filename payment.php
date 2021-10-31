@@ -79,7 +79,6 @@
         </div>
             </form>
         </div>
-        
             <footer>
             <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>

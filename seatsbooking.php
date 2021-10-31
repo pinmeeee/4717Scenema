@@ -4,7 +4,8 @@
 <?php include "cinemashowtimes.php"; ?>
 <?php include "seatsidgen.php"; ?>
 <?php $showId = $_GET['id']; ?>
-<?php require_once('seatselection.php') ?>
+<!-- <?php require_once('seatselection.php') ?> -->
+<?php include "seatselection.php" ?>
 
 
 
@@ -22,6 +23,8 @@
         </header>
         
         <div id="seatsbookingcontent">
+<form method="POST" action="confirmation.php">
+
             <div id="seatsselection">
                 <h2 id="title">
                     <?php display_show_movie($showId) ?>&nbsp;
@@ -53,7 +56,8 @@
                     </li>
                   </ul>
                   
-                <div id="seatslayout">
+                
+                  <div id="seatslayout">
                 
                     <div class="screen"></div>
 
@@ -82,12 +86,17 @@
                         </td>
                     </tr>   
                 </table>
-                <div>Seats selected: <span id="seatsSelected">none</span></div>
+                <div>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></div>
+                <!-- <div>Seats selected: 
+                    <span name="seatsSelected" id="seatsSelected">none</span>
+                </div> -->
+                <!-- <input type="hidden" id="seatsSelected" name="seatsSelected" value="">  -->
             </div>
         </div>
         <div id="bookingbuttons">
-            <a href="confirmation.php"><button type="button" class="bookingbutt">BOOK NOW</button></a>
+            <button type="submit" class="bookingbutt">BOOK NOW</button>
         </div>
+</form>
         <footer>
             <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>
@@ -113,7 +122,7 @@
             event.target.classList.add("selected");
             document.getElementById("count").innerText=count;
             document.getElementById("total").innerText=total;
-            document.getElementById("seatsSelected").innerText=seatSel;
+            document.getElementById("seatsSelected").value=seatSel;
 
         }else if (event.target.classList.contains('selected') ){
             count--;
@@ -126,7 +135,7 @@
             event.target.classList.remove("selected");
             document.getElementById("count").innerText=count;
             document.getElementById("total").innerText=total;
-            document.getElementById("seatsSelected").innerText=seatSel;
+            document.getElementById("seatsSelected").value=seatSel;
         }
       })
     }

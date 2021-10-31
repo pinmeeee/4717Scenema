@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "cinemashowtimes.php"; ?>
-<?php $showId = $_GET['id']; ?>
+
+<?php include "seatselection.php" ?>
+
+<?php 
+    if(isset($_POST['seatsSelected'])) {
+        echo $_POST['seatsSelected'];
+    } else {
+        echo "nothing";
+    }
+?>
+
 
 <head>
     <title>Confirmation | Scenema</title>
@@ -33,7 +43,17 @@
                         <th colspan="4">Your Basket</td>
                     </tr>
                     <tr>
-                        <td><?php display_show_movie($showId) ?>;</td>
+                        <td><?php display_show_movie($showId) ?>
+                        <?php 
+    if(isset($_POST['seatsSelected'])) {
+        echo "seats selected are";
+        echo $_POST['seatsSelected'];
+    } else {
+        echo "nothing";
+    }
+?>
+                    </td>
+                
                     </tr>
                     <tr>
                         <td>Showing at <?php display_show_cinema($showId) ?>,;<?php display_show_day($showId) ?>&nbsp,;<?php display_show_time($showId) ?>&nbsp;</td>

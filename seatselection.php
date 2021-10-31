@@ -3,19 +3,30 @@
 	session_start();
 	$id=session_id();
 
-	$_SESSION['showid'] = $showId;
+	if (isset($showId)){
+		$_SESSION['showid'] = $showId;
+		$seshShowId = $_SESSION['showid'];
+	}else{
+		$seshShowId = $_SESSION['showid'];
+	}
+
+	// if (isset($_POST['seatsSelected'])){
+	// 	$_SESSION['seshSets'] = $_POST['seatsSelected'];
+	// 	$seshSeats = $_SESSION['seshSets'];
+	// }else{
+	// 	$seshSeats = $_SESSION['seshSets'];
+	// }
+
+	// if (! $_POST['seatsSelected']){
+	// 	echo "there is something";
+	// }
+
+	
 	echo "Session id is";
 	echo $id;
 	echo "Show id is";
-	echo $_SESSION['showid'];
+	echo $seshShowId;
+	// echo "Seats selected are";
+	// echo $seshSeats;
 
 ?>
-
-	<!-- if (!isset($_SESSION['cart'])){
-		$_SESSION['cart'] = array();
-	}
-	if (isset($_GET['buy'])) {
-		$_SESSION['cart'][] = $_GET['buy'];
-		header('location: ' . $_SERVER['PHP_SELF']. '?' . SID);
-		exit();
-	} -->

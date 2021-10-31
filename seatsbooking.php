@@ -3,6 +3,7 @@
 <html lang="en">
 <?php include "cinemashowtimes.php"; ?>
 <?php $showId = $_GET['id']; ?>
+<?php require_once('seatselection.php') ?>
 
 
 

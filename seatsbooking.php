@@ -127,8 +127,6 @@
             document.getElementById("count").innerText=count;
             document.getElementById("total").innerText=total;
             document.getElementById("seatsSelected").innerText=seatSel;
-        }else {
-
         }
       })
     }

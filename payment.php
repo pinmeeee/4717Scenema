@@ -71,12 +71,15 @@
                     required 
                     placeholder = "Enter your Credit Card number here"
                     ></div><br><br>
+                    <div id="homebuttons">
+            <button name="confirm" type="submit" value="return">GO BACK</button>
+            <button name="confirm" type="submit" value="pay">PAY</button>
+            <!-- <input type="submit" id="return" value="GO BACK" id="paymentbutt">
+            <input type="submit" id="submit" value="PAY" id="paymentbutt"> -->
+        </div>
             </form>
         </div>
-        <div id="homebuttons">
-            <input type="submit" id="return" value="GO BACK" id="paymentbutt">
-            <input type="submit" id="submit" value="PAY" id="paymentbutt">
-            </div>
+        
             <footer>
             <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>
         </footer>

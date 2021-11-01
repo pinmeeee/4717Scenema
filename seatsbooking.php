@@ -78,17 +78,11 @@
                     </tr>
                     <tr>
                         <td><?php display_show_movie($showId) ?>&nbsp;</td>
-<<<<<<< HEAD
+
                         <td>No. of tickets: <input type="text" name="count" id="count" value=""></td> 
-=======
-                        <td>No. of tickets: <span id="count">0</span></td> 
->>>>>>> 096b95ec91eb2c4ffd0519ddcc6302bd125717c0
                     </tr>
                     <tr>
                         <td>Total Cost: $<input type="text" name="totalcost" id="totalcost" value=""></td>
-                        <!-- <td>
-                            <span id="total">0</span>
-                        </td> -->
                     </tr>   
                 </table>
                 <div>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></div>
@@ -125,13 +119,12 @@
             seatSel.push(event.target.id);
             var total=count*price;
             event.target.classList.add("selected");
-<<<<<<< HEAD
+
             document.getElementById("count").value=count;
             document.getElementById("totalcost").value=total;
-=======
+
             document.getElementById("count").innerText=count;
             document.getElementById("totalcost").innerText=total;
->>>>>>> 096b95ec91eb2c4ffd0519ddcc6302bd125717c0
             document.getElementById("seatsSelected").value=seatSel;
 
         }else if (event.target.classList.contains('selected') ){

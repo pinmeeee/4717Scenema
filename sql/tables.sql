@@ -39,9 +39,11 @@ create table available
 );
 
 create table payment
-( payment_id int unsigned not null auto_increment=4832 primary key,
+( payment_id int unsigned not null auto_increment primary key,
   paymentname char(50) not null,
   paymentmobile char(8) not null,
   paymentemail varchar(100) not null,
   paymentnumber char(16) not null
 );
+
+alter table payment auto_increment=110101;

@@ -1,4 +1,6 @@
 <?php
+
+include 'insert_details.php';
 $to      = 'f32ee@localhost';
     $subject = 'Order Confirmed!';
     $message = "Your tickets has been confirmed!";
@@ -18,7 +20,6 @@ $to      = 'f32ee@localhost';
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/scenema.css">
     <link rel="stylesheet" href="./css/success.css">
-    <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
 <body >

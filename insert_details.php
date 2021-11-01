@@ -2,23 +2,22 @@
 // Create connection
 
 
-if(isset($_POST['submit'])){
-    
-    //to run PHP script on submit
+
 	// create short variable names
-    if($_REQUEST['confirm']){
-        
+        $name=$_POST['name'];
+        $mobile=$_POST['mobile'];
+        $email=$_POST['email'];
+        $card=$_POST['card'];
+
 	
         if (!$name || !$mobile || !$email || !$card) { //check that user has entered all fields
             echo "You have not entered all the required details.<br />"
                     ."Please go back and try again.";
             exit;
         }else{
-                $name=$_POST['name'];
-                $mobile=$_POST['mobile'];
-                $email=$_POST['email'];
-                $card=$_POST['card'];
+
                 $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
+
 
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
@@ -29,11 +28,11 @@ if(isset($_POST['submit'])){
 
                 if ($result = mysqli_query($conn, $query)) {
                     $row = mysqli_fetch_assoc($result);
-                    echo $name;
+                    
                 } else {
                     echo "Failed fetching data from database.";
                 }
-                mysqli_close($conn);
+                // mysqli_close($conn);
 
         }
 
@@ -54,7 +53,7 @@ if(isset($_POST['submit'])){
     //     }
     // }
 
-}
-
-    mysqli_close($conn);
+// }
+// }
+    // mysqli_close($conn);
 ?>

@@ -42,13 +42,14 @@
                     <option value="2">Tuesday</option>
                     <option value="3">Wednesday</option>
                 </select>
-                <select name="timeSelected" id="timeSelected" class="filter" disabled>
+                <select name="timeSelected" id="timeSelected" class="filter" disabled
+                onchange="enablebutt()">
                     <option value="none" selected disabled hidden>SELECT TIME</option>
                     <option value="1">9am</option>
                     <option value="2">12pm</option>
                     <option value="3">6pm</option>
                 </select>
-                <button type="submit" class="filterbutt">BOOK NOW</button>
+                <button type="submit" class="filterbutt" id="booknowbutt" disabled>BOOK NOW</button>
                 </form>
             </div>
         <div id="homecontent">

@@ -25,12 +25,12 @@
             <h1 id="title">PAYMENT DETAILS</h1>
     </div>
         <div id="paymentslip">
-            <form action="insert_details.php" method="post">
+            <form action="success.php" method="post">
                 <div>
                 <label id="namelab">Name:</label>
                     <input 
                         type="text"  
-                        id="name" 
+                        name="name" 
                         size=50 
                         onchange="validateName()"
                         required 
@@ -40,7 +40,7 @@
                 <div>
                 <label id="phonelab">Mobile:</label>
                     <input 
-                    type="tel" 
+                    type="text" 
                     name="mobile" 
                     size=50
                     maxlength="8" 
@@ -53,7 +53,7 @@
                 <label id="emaillab">Email:</label>
                     <input 
                         type="text" 
-                        id="email"
+                        name="email"
                         size=50 
                         onchange="validateEmail()"
                         required 
@@ -63,8 +63,8 @@
                 <div>   
                 <label id="cardlab">Credit Card Number:</label>
                     <input 
-                    type="tel" 
-                    id="card" 
+                    type="text" 
+                    name="card" 
                     size=50
                     maxlength="16" 
                     onchange="validateCard()"
@@ -72,7 +72,7 @@
                     placeholder = "Enter your Credit Card number here"
                     ></div><br><br>
                     <div id="homebuttons">
-            <button name="confirm" type="submit" value="return">GO BACK</button>
+            <button name="return" type="button" value="return" onclick="history.back();">GO BACK</button>
             <button name="confirm" type="submit" value="pay">PAY</button>
             <!-- <input type="submit" id="return" value="GO BACK" id="paymentbutt">
             <input type="submit" id="submit" value="PAY" id="paymentbutt"> -->

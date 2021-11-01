@@ -10,6 +10,15 @@
 		$seshShowId = $_SESSION['showid'];
 	}
 
+	if (isset($seatId)){
+		$_SESSION['seatid'] = $seatId;
+		$seshseatId = $_SESSION['seatid'];
+	}else{
+		$seshseatId = $_SESSION['seatid'];
+	}
+
+	
+
 	// if (isset($_POST['seatsSelected'])){
 	// 	$_SESSION['seshSets'] = $_POST['seatsSelected'];
 	// 	$seshSeats = $_SESSION['seshSets'];

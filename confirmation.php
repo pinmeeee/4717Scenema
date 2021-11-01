@@ -40,23 +40,20 @@
         <div id="confirmationcontent">
         <table class="confirmationtable">
                     <tr>
-                        <th colspan="4">Your Basket</td>
+                        <th colspan="4">Your Basket</th>
                     </tr>
                     <tr>
-                        <td><?php display_show_movie($showId) ?>
-                        <?php 
-    if(isset($_POST['seatsSelected'])) {
-        echo "seats selected are";
-        echo $_POST['seatsSelected'];
-    } else {
-        echo "nothing";
-    }
-?>
-                    </td>
-                
+                        <td>Movie Name</td>
                     </tr>
                     <tr>
-                        <td>Showing at <?php display_show_cinema($showId) ?>,;<?php display_show_day($showId) ?>&nbsp,;<?php display_show_time($showId) ?>&nbsp;</td>
+                    <?php 
+                     if(isset($_POST['seatsSelected'])) {
+                        echo "seats selected are";
+                        echo $_POST['seatsSelected'];
+                    } else {
+                        echo "nothing";
+                    }  
+                    ?>
                     </tr>
                     <tr>
                         <td>ITEM</td>
@@ -66,9 +63,25 @@
                     </tr>
                     <tr>
                         <td>weekday standard</td>
-                        <td>COST</td>
-                        <td>QUANTITY</td>
-                        <td>SUBTOTAL</td>
+                        <td>10</td>
+                        <td>
+                        <?php
+                        if(isset($_POST['count'])) {
+                         echo $_POST['count'];
+                        } else {
+                             echo "nothing";
+                        }
+                        ?>
+                        </td>
+                        <td>
+                        <?php
+                        if(isset($_POST['totalcost'])) {
+                         echo $_POST['totalcost'];
+                        } else {
+                             echo "nothing";
+                        }
+                        ?>
+                        </td>
                     </tr>   
                 </table>
         </div>

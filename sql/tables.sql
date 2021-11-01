@@ -45,3 +45,5 @@ create table payment
   paymentemail varchar(100) not null,
   paymentnumber char(16) not null
 );
+
+alter table payment auto_increment=110101;

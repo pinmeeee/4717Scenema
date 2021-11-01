@@ -43,7 +43,28 @@
                         <th colspan="4">Your Basket</th>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>Movie Name</td>
+=======
+                        <td><?php display_show_movie($showId) ?>
+                        <?php 
+    if(isset($_POST['seatsSelected'])) {
+        echo "seats selected are";
+        echo $_POST['seatsSelected'];
+    } else {
+        echo "nothing";
+    }
+
+    if(isset($_POST['totalcost'])) {
+        echo "total cost is";
+        echo $_POST['totalcost'];
+    } else {
+        echo "nothing";
+    }
+?>
+                    </td>
+                
+>>>>>>> 096b95ec91eb2c4ffd0519ddcc6302bd125717c0
                     </tr>
                     <tr>
                     <?php 

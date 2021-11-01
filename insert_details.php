@@ -1,60 +1,45 @@
 <?php
 // Create connection
+$conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
 
+if (!$conn) {
+     die("Connection failed: " . mysqli_connect_error());
+}
 
-if(isset($_POST['submit'])){
-    
-    //to run PHP script on submit
 	// create short variable names
-    if($_REQUEST['confirm']){
-        
+        $name=$_POST['name'];
+        $mobile=$_POST['mobile'];
+        $email=$_POST['email'];
+        $card=$_POST['card'];
+
 	
         if (!$name || !$mobile || !$email || !$card) { //check that user has entered all fields
             echo "You have not entered all the required details.<br />"
                     ."Please go back and try again.";
             exit;
         }else{
-                $name=$_POST['name'];
-                $mobile=$_POST['mobile'];
-                $email=$_POST['email'];
-                $card=$_POST['card'];
-                $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
 
-                if (!$conn) {
-                    die("Connection failed: " . mysqli_connect_error());
-                }
-
-                $query = "INSERT INTO payment value
+                $query = "INSERT INTO payment values
                             (null,'".$name."', '".$mobile."', '".$email."', '".$card."')";
-
-                if ($result = mysqli_query($conn, $query)) {
-                    $row = mysqli_fetch_assoc($result);
-                    echo $name;
+                $result = mysqli_query($conn, $query);
+                if ($result) {
+                    $queryLastIndex = "SELECT MAX( payment_id ) FROM `payment`;";
+                    $lastIndex = mysqli_query($conn, $queryLastIndex);
+                    $row = $lastIndex->fetch_assoc();
+                    $lastIndex = $row['MAX( payment_id )'];                    
                 } else {
-                    echo "Failed fetching data from database.";
+                    echo "User not added to database.";
                 }
-                mysqli_close($conn);
-
         }
 
-        // @ $db = new mysqli('localhost','f32ee','f32ee','f32ee');
-        // if(mysqli_connect_errno()){
-        //     echo 'Error: Could not connect to database.  Please try again later.';
-        // exit;
-        // }
+        $to      = 'f32ee@localhost';
+    $subject = 'Payment Confirmed!';
+    $message = "Your tickets has been confirmed! \nPayment Id: {$lastIndex}.";
+    $headers = 'From: f32ee@localhost' . "\r\n" .
+        'Reply-To: f32ee@localhost' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
 
-        
-    //     $result = $db->query($query); //query submission
-
-    // //insert query results
-    //     if ($result) {
-    //         echo  $db->affected_rows."payment details inserted into database.";
-    //     } else {
-    //         echo "An error has occurred.  The payment details w not added.";
-    //     }
-    // }
-
-}
-
-    mysqli_close($conn);
+    mail($to, $subject, $message, $headers,'-ff32ee@localhost');
+    // echo ("mail sent to : ".$to);
+    
 ?>

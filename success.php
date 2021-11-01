@@ -1,15 +1,12 @@
 <?php
-$to      = 'f32ee@localhost';
-    $subject = 'Order Confirmed!';
-    $message = "Your tickets has been confirmed!";
-    $headers = 'From: f32ee@localhost' . "\r\n" .
-        'Reply-To: f32ee@localhost' . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+include 'insert_details.php';
 
-    mail($to, $subject, $message, $headers,'-ff32ee@localhost');
-    // echo ("mail sent to : ".$to);
-
+// mysqli_close($conn);
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,13 +15,12 @@ $to      = 'f32ee@localhost';
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/scenema.css">
     <link rel="stylesheet" href="./css/success.css">
-    <script type="text/javascript" src="jobs-validation.js"></script>
 </head>
 
 <body >
     <div id="wrapper">
         <header>
-            <img id="navilogo" src="logo.png">
+            <img id="navilogo" src="assets/logo.png">
         </header>
 
     <div id="content">
@@ -39,10 +35,12 @@ $to      = 'f32ee@localhost';
             <h1 id="title">BOOKING SUCCESSFUL</h1>
     </div>
         <div id="successslip">
-            <p>YOUR TICKETS</p>
+            <p>YOUR TICKETS </p>
+            <p> Your payment ID is <?php echo $lastIndex ?></p>
+            <p> Your seats are: 
         </div>
         <div id="homebuttons">
-            <a href="index.html"><button id="homebutt">HOME</button></a>
+            <a href="index.php"><button id="homebutt">HOME</button></a>
             </div>
     </div>
 </body>

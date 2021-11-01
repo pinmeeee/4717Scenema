@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 include 'insert_details.php';
 
 if ($result) {
@@ -11,6 +12,10 @@ if ($result) {
     $lastIndex = $row['MAX( payment_id )'];
     // echo ( $lastIndex);
 
+=======
+
+include 'insert_details.php';
+>>>>>>> 0e220173414fef3def0fc67647dc6c1169542764
 $to      = 'f32ee@localhost';
     $subject = 'Order Confirmed!';
     $message = "Your tickets has been confirmed! \nPayment Id: {$lastIndex}.";

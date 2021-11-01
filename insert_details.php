@@ -8,6 +8,10 @@ $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
                 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e220173414fef3def0fc67647dc6c1169542764
 	// create short variable names
         $name=$_POST['name'];
         $mobile=$_POST['mobile'];
@@ -20,6 +24,16 @@ $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
                     ."Please go back and try again.";
             exit;
         }else{
+<<<<<<< HEAD
+=======
+
+                $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
+
+
+                if (!$conn) {
+                    die("Connection failed: " . mysqli_connect_error());
+                }
+>>>>>>> 0e220173414fef3def0fc67647dc6c1169542764
 
                 $query = "INSERT INTO payment value
                             (null,'".$name."', '".$mobile."', '".$email."', '".$card."')";
@@ -30,6 +44,33 @@ $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
                 } else {
                     echo "Failed fetching data from database.";
                 }
+<<<<<<< HEAD
         }
 
+=======
+                // mysqli_close($conn);
+
+        }
+
+        // @ $db = new mysqli('localhost','f32ee','f32ee','f32ee');
+        // if(mysqli_connect_errno()){
+        //     echo 'Error: Could not connect to database.  Please try again later.';
+        // exit;
+        // }
+
+        
+    //     $result = $db->query($query); //query submission
+
+    // //insert query results
+    //     if ($result) {
+    //         echo  $db->affected_rows."payment details inserted into database.";
+    //     } else {
+    //         echo "An error has occurred.  The payment details w not added.";
+    //     }
+    // }
+
+// }
+// }
+    // mysqli_close($conn);
+>>>>>>> 0e220173414fef3def0fc67647dc6c1169542764
 ?>

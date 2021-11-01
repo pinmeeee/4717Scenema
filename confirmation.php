@@ -51,6 +51,13 @@
     } else {
         echo "nothing";
     }
+
+    if(isset($_POST['totalcost'])) {
+        echo "total cost is";
+        echo $_POST['totalcost'];
+    } else {
+        echo "nothing";
+    }
 ?>
                     </td>
                 

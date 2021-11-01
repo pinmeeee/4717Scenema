@@ -78,12 +78,13 @@
                     </tr>
                     <tr>
                         <td><?php display_show_movie($showId) ?>&nbsp;</td>
-                        <td>No. of tickets: <span id="count">0</span></td>
+                        <td>No. of tickets: <span id="count">0</span></td> 
                     </tr>
                     <tr>
-                        <td>Total Cost: $</td>
-                        <td><span id="total">0</span>
-                        </td>
+                        <td>Total Cost: $<input type="text" name="totalcost" id="totalcost" value=""></td>
+                        <!-- <td>
+                            <span id="total">0</span>
+                        </td> -->
                     </tr>   
                 </table>
                 <div>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></div>
@@ -121,7 +122,7 @@
             var total=count*price;
             event.target.classList.add("selected");
             document.getElementById("count").innerText=count;
-            document.getElementById("total").innerText=total;
+            document.getElementById("totalcost").innerText=total;
             document.getElementById("seatsSelected").value=seatSel;
 
         }else if (event.target.classList.contains('selected') ){
@@ -134,7 +135,7 @@
             var total=count*price;
             event.target.classList.remove("selected");
             document.getElementById("count").innerText=count;
-            document.getElementById("total").innerText=total;
+            document.getElementById("totalcost").innerText=total;
             document.getElementById("seatsSelected").value=seatSel;
         }
       })

@@ -53,7 +53,7 @@
                 </form>
             </div>
         <div id="homecontent">
-                <a href="./moviedetails.php?id=1">pawpatrol banner</a>
+                <a href="./moviedetails.php?id=1"><img src="assets/pawpatrolbanner.jpeg"></a>
                 <a href="./moviedetails.php?id=2"><img src="assets/shangchibanner.jpg"></a>
         </div>
         <footer>

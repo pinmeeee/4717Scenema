@@ -43,24 +43,23 @@
                         <th colspan="4">Your Basket</th>
                     </tr>
                     <tr>
-
                         <td>Movie Name</td>
                     </tr>
-                    <tr>
+                    <tr><td>
                     <?php 
                      if(isset($_POST['seatsSelected'])) {
-                        echo "seats selected are";
+                        echo "Seats:";
                         echo $_POST['seatsSelected'];
                     } else {
                         echo "nothing";
                     }  
-                    ?>
+                    ?></td>
                     </tr>
                     <tr>
-                        <td>ITEM</td>
-                        <td>COST</td>
-                        <td>QUANTITY</td>
-                        <td>SUBTOTAL</td>
+                        <th>ITEM</th>
+                        <th>COST</th>
+                        <th>QUANTITY</th>
+                        <th>SUBTOTAL</th>
                     </tr>
                     <tr>
                         <td>weekday standard</td>

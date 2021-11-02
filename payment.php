@@ -71,12 +71,11 @@
                     required 
                     placeholder = "Enter your Credit Card number here"
                     ></div><br><br>
-                    <div id="homebuttons">
-            <button name="return" type="button" value="return" onclick="history.back();">GO BACK</button>
-            <button name="confirm" type="submit" value="pay">PAY</button>
-            <!-- <input type="submit" id="return" value="GO BACK" id="paymentbutt">
-            <input type="submit" id="submit" value="PAY" id="paymentbutt"> -->
-        </div>
+                    
+                <div id="homebuttons">
+                    <button name="return" type="button" class="paymentbutt" value="return" onclick="history.back();">GO BACK</button>
+                    <button name="confirm" type="submit" class="paymentbutt" value="pay">PAY</button>
+                </div>
             </form>
         </div>
             <footer>

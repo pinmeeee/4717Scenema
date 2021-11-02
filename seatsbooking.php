@@ -54,10 +54,10 @@
                       <div id="seat" class="seat occupied"></div>
                       <small class="seatlabel">Occupied</small>
                     </li>
-                  </ul>
+                </ul>
                   
                 
-                  <div id="seatslayout">
+                <div id="seatslayout">
                 
                     <div class="screen"></div>
 
@@ -74,18 +74,22 @@
             <div id="basketcontent">
                 <table class="baskettable">
                     <tr>
-                        <th colspan="2">Your Basket</td>
+                        <th>Your Basket</th>
                     </tr>
                     <tr>
                         <td><?php display_show_movie($showId) ?>&nbsp;</td>
-
+                    </tr>
+                    <tr>
                         <td>No. of tickets: <input type="text" name="count" id="count" value=""></td> 
                     </tr>
                     <tr>
                         <td>Total Cost: $<input type="text" name="totalcost" id="totalcost" value=""></td>
                     </tr>   
+                    <tr>
+                        <td>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></td>
+                    </tr>
                 </table>
-                <div>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></div>
+                <!-- <div>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></div> -->
                 <!-- <div>Seats selected: 
                     <span name="seatsSelected" id="seatsSelected">none</span>
                 </div> -->
@@ -142,9 +146,6 @@
         }
       })
     }
-
-
-   
 
   </script>
 

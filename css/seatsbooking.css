@@ -14,18 +14,16 @@
  #basketcontent {
      flex-grow:1;
      min-width: 300px;
-     margin: 30px 0px 40px 50px;
+     margin: 10px 100px 0px 100px;
      background-color: rgba(255, 255, 255, 0.733);
  }
 
- .baskettable td{
+ .baskettable td {
   text-align: left;
-  padding: 20px 0px 100px 5px;
-}
-
-.baskettable {
+  padding: 15px 0px 15px 10px;
   border-collapse: separate;
 }
+
 
  #seatslayout {
     /* perspective: 300px; */

@@ -14,7 +14,7 @@ $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
 		$row = mysqli_fetch_assoc($result);
 		echo htmlspecialchars(stripslashes($row['title']));
 	} else {
-		echo "Failed fetching data from database.";
+		echo "display_selected_movie_title failed";
 	}
 	mysqli_close($conn);
 }
@@ -93,4 +93,3 @@ function display_showtime_button($id) {
 	echo "\">SHOWTIMES</a>";
 }
 
-?>

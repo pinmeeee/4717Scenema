@@ -7,7 +7,6 @@
 <?php include "seatselection.php" ?>
 
 
-
 <head>
     <title>Seats Booking | Scenema</title>
     <meta charset="utf-8">
@@ -79,13 +78,13 @@
                         <td><?php display_show_movie($showId) ?>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>No. of tickets: <input type="text" name="count" id="count" value=""></td> 
+                        <td>No. of tickets: <input readonly type="text" name="count" id="count" value=""></td> 
                     </tr>
                     <tr>
-                        <td>Total Cost: $<input type="text" name="totalcost" id="totalcost" value=""></td>
+                        <td>Total Cost: $<input readonly type="text" name="totalcost" id="totalcost" value=""></td>
                     </tr>   
                     <tr>
-                        <td>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></td>
+                        <td>Seats selected: <input readonly type="text" name="seatsSelected" id="seatsSelected" value=""></td>
                     </tr>
                 </table>
                 <!-- <div>Seats selected: <input type="text" name="seatsSelected" id="seatsSelected" value=""></div> -->

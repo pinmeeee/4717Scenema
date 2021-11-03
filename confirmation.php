@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include "cinemashowtimes.php"; ?>
-
-<?php include "seatselection.php" ?>
-
-<?php 
-    if(isset($_POST['seatsSelected'])) {
-        echo $_POST['seatsSelected'];
-    } else {
-        echo "nothing";
-    }
-?>
+<?php include "seatselection.php"; ?>
 
 
 <head>
@@ -43,16 +34,23 @@
                         <th colspan="4">Your Basket</th>
                     </tr>
                     <tr>
-                        <td>Movie Name</td>
+                        <td>
+                            <?php  display_show_movie($seshShowId); 
+                            echo " @";
+                            display_show_cinema($seshShowId);
+                            echo "  ";
+                            display_show_day($seshShowId);
+                            echo "  ";
+                            display_show_time($seshShowId);
+                            ?>
+                        </td>
                     </tr>
                     <tr><td>
                     <?php 
-                     if(isset($_POST['seatsSelected'])) {
+                     
                         echo "Seats:";
-                        echo $_POST['seatsSelected'];
-                    } else {
-                        echo "nothing";
-                    }  
+                        echo $seshseatId;
+                    
                     ?></td>
                     </tr>
                     <tr>

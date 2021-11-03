@@ -10,32 +10,20 @@
 		$seshShowId = $_SESSION['showid'];
 	}
 
-	if (isset($seatId)){
-		$_SESSION['seatid'] = $seatId;
-		$seshseatId = $_SESSION['seatid'];
+	if (isset($_POST['seatsSelected'])){
+		$_SESSION['seatsid'] = $_POST['seatsSelected'];
+		$seshseatId = $_SESSION['seatsid'];
 	}else{
-		$seshseatId = $_SESSION['seatid'];
+		$seshseatId = $_SESSION['seatsid'];
 	}
 
 	
-
-	// if (isset($_POST['seatsSelected'])){
-	// 	$_SESSION['seshSets'] = $_POST['seatsSelected'];
-	// 	$seshSeats = $_SESSION['seshSets'];
-	// }else{
-	// 	$seshSeats = $_SESSION['seshSets'];
-	// }
-
-	// if (! $_POST['seatsSelected']){
-	// 	echo "there is something";
-	// }
-
-	
-	echo "Session id is";
+	echo "DATA IN SESSION: ";
+	echo "Session id is ";
 	echo $id;
-	echo "Show id is";
+	echo "Show id is ";
 	echo $seshShowId;
-	// echo "Seats selected are";
-	// echo $seshSeats;
+	echo "ID of seats selected are ";
+	echo $seshseatId;
 
 ?>

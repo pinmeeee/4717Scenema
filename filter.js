@@ -27,7 +27,9 @@ function update_day() {
 }
 function enabletime(){
     if (moviesel!=0 & cinsel!=0 & daysel!=0 ){
-        alert("time dropdown enabled, timesel is"+timesel);
+        // self.location = '.\?moviesel=' + moviesel +'cinsel='+cinsel+'daysel='+daysel;
+        alert("time dropdown enabled, timesel is"+timesel+
+        "moviesel,cinsel and daysel are:"+moviesel+cinsel+daysel);
         document.getElementById("timeSelected").disabled = false;
         timesel = document.getElementById("timeSelected").value;
     }else{
@@ -35,8 +37,9 @@ function enabletime(){
     }  
 }
 function enablebutt(){
+    timesel = document.getElementById("timeSelected").value;
     if (moviesel != 0 & cinsel != 0 & daysel != 0) {
-        if (timesel === 1 | timesel === 2 |timesel === 3){
+        if ((timesel == 1) | (timesel == 2) | (timesel == 3)){
             document.getElementById("booknowbutt").disabled = false;
             alert("button enabled, timesel is" + timesel);
         }else{
@@ -45,5 +48,11 @@ function enablebutt(){
     } else {
         document.getElementById("timeSelected").disabled = true;
     }
-
 }
+// function displaysel(){
+//     if (moviesel != 0){
+//         self.location = '.\?moviesel=' + moviesel;
+//         document.getElementById("movieSelected").selected = true;
+//         document.getElementById("movieSelected").value = moviesel;
+//     }
+// }

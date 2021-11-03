@@ -4,7 +4,6 @@
 <?php include "cinemashowtimes.php"; ?>
 <?php include "seatsidgen.php"; ?>
 <?php $showId = $_GET['id']; ?>
-<!-- <?php require_once('seatselection.php') ?> -->
 <?php include "seatselection.php" ?>
 
 

@@ -85,7 +85,7 @@
         </div>
 
     <div id="homebuttons">
-    <a href="seatsbooking.php"><button id="confirmationbutt">GO BACK</button></a>
+    <a href="seatsbooking.php?id=<?php echo $seshShowId ?>"><button id="confirmationbutt">GO BACK</button></a>
     <a href="payment.php"><button id="confirmationbutt">PROCEED TO PAYMENT</button></a>
     </div>
     </div>

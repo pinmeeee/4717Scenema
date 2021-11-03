@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include "seatselection.php" ?>
 <head>
     <title>Payment | Scenema</title>
     <meta charset="utf-8">

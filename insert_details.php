@@ -21,7 +21,7 @@ if (!$conn) {
             exit;
         }else{
                 $query = "INSERT INTO payment values
-                            (null,'".$name."', '".$mobile."', '".$email."', '".$card."')";
+                            (null,'".$name."', '".$mobile."', '".$email."', '".$card."', null)";
                 
                 $result = mysqli_query($conn, $query);
                 if ($result) {

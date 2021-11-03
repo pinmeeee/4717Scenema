@@ -35,7 +35,8 @@ create table available
 ( res_id int unsigned not null auto_increment primary key,
   show_id int unsigned not null,
   seat_id int unsigned not null,
-  taken bool
+  taken bool,
+  session_id varchar(100)
 );
 
 create table payment
@@ -43,7 +44,8 @@ create table payment
   paymentname char(50) not null,
   paymentmobile char(8) not null,
   paymentemail varchar(100) not null,
-  paymentnumber char(16) not null
+  paymentnumber char(16) not null,
+  session_id varchar(100)
 );
 
 alter table payment auto_increment=110101;

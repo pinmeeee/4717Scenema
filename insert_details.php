@@ -64,13 +64,11 @@ if (!$conn) {
                 }
 
                 
-
-
                
 
                 $to      = 'f32ee@localhost';
                 $subject = 'Payment Confirmed!';
-                $message = "Your tickets has been confirmed! \nPayment Id: {$lastIndex}.";
+                $message = "Your tickets has been confirmed! \nPayment Id: {$lastIndex}. \nSeats:{$seshseatId}";
                 $headers = 'From: f32ee@localhost' . "\r\n" .
                     'Reply-To: f32ee@localhost' . "\r\n" .
                     'X-Mailer: PHP/' . phpversion();

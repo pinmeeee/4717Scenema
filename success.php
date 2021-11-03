@@ -37,7 +37,7 @@ mysqli_close($conn);
         <div id="successslip">
             <p>YOUR TICKETS </p>
             <p> Your payment ID is <?php echo $lastIndex ?></p>
-            <p> Your seats are: 
+            <p> Your seats are: <?php echo $seshseatId ?></p>
         </div>
         <div id="homebuttons">
             <a href="index.php"><button id="homebutt">HOME</button></a>

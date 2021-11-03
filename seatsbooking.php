@@ -124,9 +124,6 @@
 
             document.getElementById("count").value=count;
             document.getElementById("totalcost").value=total;
-
-            document.getElementById("count").innerText=count;
-            document.getElementById("totalcost").innerText=total;
             document.getElementById("seatsSelected").value=seatSel;
 
         }else if (event.target.classList.contains('selected') ){

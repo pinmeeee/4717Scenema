@@ -1,5 +1,7 @@
 <?php
 include 'insert_details.php';
+// include "seatselection.php";
+
 
 mysqli_close($conn);
 ?>

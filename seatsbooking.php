@@ -78,7 +78,7 @@
                         <td><?php display_show_movie($showId) ?>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>No. of tickets: <input readonly type="text" name="count" id="count" value=""></td> 
+                        <td>No. of tickets: <input readonly  onchange="enablebookbutt()" type="text" name="count" id="count" value=""></td> 
                     </tr>
                     <tr>
                         <td>Total Cost: $<input readonly type="text" name="totalcost" id="totalcost" value=""></td>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div id="bookingbuttons">
-            <button type="submit" class="bookingbutt">BOOK NOW</button>
+            <button type="submit" class="bookingbutt" id="booknowbutt">BOOK NOW</button>
         </div>
 </form>
         <footer>
@@ -145,6 +145,18 @@
       })
     }
 
+    //trying to disable book now button when count is less than 1
+
+    // function enablebookbutt(){
+    //     if (count==0){
+    //         document.getElementById("booknowbutt").disabled=true;
+    //         alert("booknowbutton disabled");
+    //     }else{
+    //         alert("booknowbutton enabled");
+    //         document.getElementById("booknowbutt").disabled=false;
+    //     }
+    // }
+    
   </script>
 
 </html>

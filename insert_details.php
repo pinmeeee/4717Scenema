@@ -27,12 +27,11 @@ if (!$conn) {
                 
                 $result = mysqli_query($conn, $query);
                 if ($result) {
+
                     $queryLastIndex = "SELECT MAX( payment_id ) FROM `payment`;";
                     $lastIndex = mysqli_query($conn, $queryLastIndex);
                     $row = $lastIndex->fetch_assoc();
-                    $lastIndex = $row['MAX( payment_id )'];
-                    
-                     
+                    $lastIndex = $row['MAX( payment_id )'];   
 
                 } else {
                     echo "An error has occurred.  The item was not added.";
@@ -47,7 +46,7 @@ if (!$conn) {
                     foreach ($seatarray as $seat){
                         echo "im in the foreach loop";
                         $query2 ="UPDATE available
-                                SET taken = '1', session_id = '$id'
+                                SET taken = '5', session_id = '$id'
                                 WHERE show_id = ".$seshShowId." AND seat_id = ".$seat."
                         ";
                     

@@ -59,7 +59,7 @@
                 
                     <div class="screen"></div>
 
-                    <?php seatsidgen() ?>
+                    <?php seatsidgen($showId) ?>
                     <div class="row">
                         <div id="test1" class="seat"></div>
                         <div id="test2" class="seat occupied"></div>

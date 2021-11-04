@@ -35,7 +35,7 @@ create table available
 ( res_id int unsigned not null auto_increment primary key,
   show_id int unsigned not null,
   seat_id int unsigned not null,
-  taken bool,
+  taken int unsigned,
   session_id varchar(100)
 );
 

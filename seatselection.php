@@ -18,12 +18,12 @@
 	}
 
 	
-	echo "DATA IN SESSION: ";
-	echo "Session id is ";
-	echo $id;
-	echo "Show id is ";
-	echo $seshShowId;
-	echo "ID of seats selected are ";
-	echo $seshseatId;
+	// echo "DATA IN SESSION: ";
+	// echo "Session id is ";
+	// echo $id;
+	// echo "Show id is ";
+	// echo $seshShowId;
+	// echo "ID of seats selected are ";
+	// echo $seshseatId;
 
 ?>

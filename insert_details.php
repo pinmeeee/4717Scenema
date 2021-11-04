@@ -40,12 +40,12 @@ if (!$conn) {
 
                 // $seating = unserialize($_SESSION['seatsSelected']);
                 // foreach ($_SESSION['seatsSelected'] as $seat){
-                echo "im outside the foreach loop";
+                // echo "im outside the foreach loop";
                 $seatarray = explode(",", $seshseatId);
                 if(is_array($seatarray)){
-                    echo "seat id is an array!!";
+                    // echo "seat id is an array!!";
                     foreach ($seatarray as $seat){
-                        echo "im in the foreach loop";
+                        // echo "im in the foreach loop";
                         $query2 ="UPDATE available
                                 SET taken = '5', session_id = '$id'
                                 WHERE show_id = ".$seshShowId." AND seat_id = ".$seat."
@@ -53,7 +53,7 @@ if (!$conn) {
                     
                         if ($result2 = mysqli_query($conn, $query2)) {
                             $row2 = mysqli_fetch_assoc($result2);
-                            echo "availabilty updated for red_id: ";
+                            // echo "availabilty updated for red_id: ";
                             echo htmlspecialchars(stripslashes($row2['res_id']));
                         } else {
                             echo "An error has occurred.  availability not updated";

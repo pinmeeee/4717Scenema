@@ -1,9 +1,16 @@
 #successslip {
+    color: white;
     flex-grow: 1;
     min-width: 600px;
     min-height: 250px;
-    background-color: rgb(204, 197, 197);
+    border-style: solid;
+    border-color: white;
 }
+
+p.thick {
+    font-weight: bold;
+    font-size: 20px;
+  }
 
 #homebutt {
     height: 50px;
@@ -17,7 +24,7 @@
     border-color: white;
     }
 
-    p {
-        text-align: center
-    }
+p {
+    text-align: center
+}
     

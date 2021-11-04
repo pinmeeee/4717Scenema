@@ -75,7 +75,7 @@
                         <th>Your Basket</th>
                     </tr>
                     <tr>
-                        <td><?php display_show_movie($showId) ?>&nbsp;</td>
+                        <td>Movie: <?php display_show_movie($showId) ?>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>No. of tickets: <input readonly  onchange="enablebookbutt()" type="text" name="count" id="count" value=""></td> 

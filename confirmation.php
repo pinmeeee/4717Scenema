@@ -47,10 +47,8 @@
                     </tr>
                     <tr><td>
                     <?php 
-                     
                         echo "Seats:";
                         echo $seshseatId;
-                    
                     ?></td>
                     </tr>
                     <tr>

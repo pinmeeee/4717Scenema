@@ -12,14 +12,25 @@
  
  
  #basketcontent {
+     color: white;
      flex-grow:1;
-     min-width: 300px;
+     min-width: 500px;
      margin: 10px 100px 0px 100px;
-     background-color: rgba(255, 255, 255, 0.733);
+     border-style: solid;
+     border-color: white;
+ }
+
+ .baskettable {
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .baskettable th {
+  font-size: 30px;
  }
 
  .baskettable td {
-  text-align: left;
+  text-align: center;
   padding: 15px 0px 15px 10px;
   border-collapse: separate;
 }

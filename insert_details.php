@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include "seatselection.php";
 
@@ -64,18 +65,18 @@ if (!$conn) {
                 }
 
                 
-
-
                
 
                 $to      = 'f32ee@localhost';
                 $subject = 'Payment Confirmed!';
-                $message = "Your tickets has been confirmed! \nPayment Id: {$lastIndex}.";
+                $message = "Your tickets has been confirmed! \nPayment Id: {$lastIndex}. \nSeats:{$seshseatId}";
                 $headers = 'From: f32ee@localhost' . "\r\n" .
                     'Reply-To: f32ee@localhost' . "\r\n" .
                     'X-Mailer: PHP/' . phpversion();
 
                 mail($to, $subject, $message, $headers,'-ff32ee@localhost');
                 // echo ("mail sent to : ".$to);
-        }   
+        }  
+session_destroy();
+$id=session_id;
 ?>

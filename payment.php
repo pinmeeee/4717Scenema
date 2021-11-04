@@ -31,6 +31,7 @@
                 <label id="namelab">Name:</label>
                     <input 
                         type="text"  
+                        id="name"
                         name="name" 
                         size=50 
                         onchange="validateName()"
@@ -42,6 +43,7 @@
                 <label id="phonelab">Mobile:</label>
                     <input 
                     type="text" 
+                    id="mobile"
                     name="mobile" 
                     size=50
                     maxlength="8" 
@@ -54,6 +56,7 @@
                 <label id="emaillab">Email:</label>
                     <input 
                         type="text" 
+                        id="email"
                         name="email"
                         size=50 
                         onchange="validateEmail()"
@@ -65,6 +68,7 @@
                 <label id="cardlab">Credit Card Number:</label>
                     <input 
                     type="text" 
+                    id="card"
                     name="card" 
                     size=50
                     maxlength="16" 

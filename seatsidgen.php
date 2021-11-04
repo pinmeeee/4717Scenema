@@ -27,9 +27,24 @@ function seatsidgen() {
                 $num_results_col = $ok->num_rows;
                 for ($col=0; $col <$num_results_col; $col++){
                     $rowdeets = mysqli_fetch_assoc($ok);
-                    echo "<div id=\"";
-                    echo htmlspecialchars(stripslashes($rowdeets['seat_id']));
-                    echo "\" class=\"seat\"></div>";
+                    $checkid=$rowdeets['seat_id'];
+                    $getavail = "SELECT * FROM available WHERE seat_id = $checkid";
+                    if ($resultcheck = mysqli_query($conn, $getavail)) {
+                        $rowavail = mysqli_fetch_assoc($resultcheck);
+                        $avail = htmlspecialchars(stripslashes($row['taken']));
+                        if ($avail == 0){
+                            echo "<div id=\"";
+                            echo htmlspecialchars(stripslashes($rowdeets['seat_id']));
+                            echo "\" class=\"seat\"></div>";
+                        }else{
+                            echo "<div id=\"";
+                            echo htmlspecialchars(stripslashes($rowdeets['seat_id']));
+                            echo "\" class=\"seat occupied\"></div>";
+                        }
+                    } else {
+                        echo "Failed fetching data from database table avail.";
+                    }
+
                 }
             } else {
                 echo "Failed fetching data from movies table.";

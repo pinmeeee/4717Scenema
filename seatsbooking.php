@@ -124,6 +124,12 @@
 
             document.getElementById("count").value=count;
             document.getElementById("totalcost").value=total;
+<<<<<<< HEAD
+=======
+
+            // document.getElementById("count").innerText=count;
+            // document.getElementById("totalcost").innerText=total;
+>>>>>>> 7b87b94eab9665c530063593f526474992b19828
             document.getElementById("seatsSelected").value=seatSel;
 
         }else if (event.target.classList.contains('selected') ){

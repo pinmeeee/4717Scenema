@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include "seatselection.php";
 
@@ -76,5 +77,7 @@ if (!$conn) {
 
                 mail($to, $subject, $message, $headers,'-ff32ee@localhost');
                 // echo ("mail sent to : ".$to);
-        }   
+        }  
+session_destroy();
+$id=session_id;
 ?>

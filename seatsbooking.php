@@ -60,13 +60,13 @@
                     <div class="screen"></div>
 
                     <?php seatsidgen($showId) ?>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div id="test1" class="seat"></div>
                         <div id="test2" class="seat occupied"></div>
                         <div id="test3" class="seat occupied"></div>
                         <div id="test4" class="seat"></div>
                         <div id="test5" class="seat"></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div id="basketcontent">

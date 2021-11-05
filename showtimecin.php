@@ -47,13 +47,41 @@
                     <option value="2">Tuesday</option>
                     <option value="3">Wednesday</option>
                 </select>
-                <select name="timeSelected" id="timeSelected" class="filter" disabled>
-                    <option value="none" selected disabled hidden>SELECT TIME</option>
+                
+               <?php
+                    // $conn = mysqli_connect("localhost", "f32ee", "f32ee", "f32ee");
+
+                    // if (!$conn) {
+                    //     die("Connection failed: " . mysqli_connect_error());
+                    // }
+
+                    // $moviesel=$_GET['moviesel'];
+                    // $cinsel=$_GET['cinsel'];
+                    // $daysel=$_GET['daysel'];
+
+                    // // $sql = "SELECT DISTINCT showtime FROM showtimes WHERE cinema_id=$cinsel AND movie_id=$moviesel AND day_id=$daysel limit 1";
+                    // if(isset($moviesel) and isset($cinsel) and isset($daysel) and strlen($moviesel) > 0 and strlen($cinsel) > 0 and strlen($daysel) > 0 ){
+                    //     // echo "<div>$moviesel$cinsel$daysel</div>";
+                    //     echo "<div>reloaded page</div>";
+                    // }else{
+                    //     echo "<select name=\"timeSelected\" id=\"timeSelected\" class=\"filter\" disabled onchange=\"enablebutt()\">
+                    //         <option value=\"none\" selected disabled hidden>SELECT TIME</option> 
+                    //         <option value=\"1\">9am</option>
+                    //         <option value=\"2\">12pm</option>
+                    //         <option value=\"3\">6pm</option>
+                    //     </select>";
+                    // }
+
+                ?>
+
+
+                <select name="timeSelected" id="timeSelected" class="filter" disabled onchange="enablebutt()">
+                    <option value="none" selected disabled hidden>SELECT TIME</option> 
                     <option value="1">9am</option>
                     <option value="2">12pm</option>
                     <option value="3">6pm</option>
                 </select>
-                <button type="submit" class="filterbutt">BOOK NOW</button>
+                <button type="submit" class="filterbutt" id="booknowbutt" disabled>BOOK NOW</button>
                 </form>
             </div>
             <div id="showtimecontent">

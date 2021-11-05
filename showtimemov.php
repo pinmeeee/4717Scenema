@@ -15,7 +15,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <img id="navilogo" src="assets/logo.png">
+            <a href="./index.php"><img id="navilogo" src="assets/logo.png"></a>
             <div id="navibutts">
             <a href="index.php"><button type="button" class="navibutt">HOME</button></a>
                 <a href="nowshowing.php"><button type="button" class="navibutt">MOVIES</button></a>

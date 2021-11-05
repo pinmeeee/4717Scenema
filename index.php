@@ -13,7 +13,7 @@
 <body>
     <div id="wrapper">
         <div id="homepageheader">
-            <img id="homelogo" src="assets/logo.png">
+            <a href="./index.php"><img id="homelogo" src="assets/logo.png"></a>
         </div>
         <div id="homebuttons">
             <a href="nowshowing.php"><button type="button" class="mainbutt">MOVIES</button></a>
@@ -81,7 +81,7 @@
             </div>
         <div id="homecontent">
                 <a href="./moviedetails.php?id=1"><img src="assets/pawpatrolbanner.jpeg"></a>
-                <a href="./moviedetails.php?id=2"><img src="assets/shangchibanner.jpg"></a>
+                <a href="./showtimecin.php?id=1"><img src="assets/imaxbanner.jpg"></a>
         </div>
         <footer>
             <small><i>Copyright &copy; 2021 Scenema Cinemas</i></small>

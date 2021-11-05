@@ -17,7 +17,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <img id="navilogo" src="assets/logo.png">
+            <a href="./index.php"><img id="navilogo" src="assets/logo.png"></a>
         </header>
         
         <div id="seatsbookingcontent">

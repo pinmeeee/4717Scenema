@@ -78,7 +78,8 @@
                     ></div><br><br>
                     
                 <div id="homebuttons">
-                    <button name="return" type="button" class="paymentbutt" value="return" onclick="history.back();">GO BACK</button>
+                    <a href="confirmation.php"><button name="return" type="button" class="paymentbutt" value="return">GO BACK</button></a>
+                    <!-- <button onclick="history.go(-1);" name="return" type="button" class="paymentbutt" value="return">GO BACK</button> -->
                     <button name="confirm" type="submit" class="paymentbutt" value="pay">PAY</button>
                 </div>
             </form>

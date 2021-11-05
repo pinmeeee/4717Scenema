@@ -47,7 +47,7 @@
                     </tr>
                     <tr><td>
                     <?php 
-                        echo "Seats:";
+                        echo "Seats: ";
                         echo $seshseatId;
                     ?></td>
                     </tr>
@@ -62,20 +62,24 @@
                         <td>10</td>
                         <td>
                         <?php
-                        if(isset($_POST['count'])) {
-                         echo $_POST['count'];
-                        } else {
-                             echo "nothing";
-                        }
+                        echo "Count: ";
+                        echo $seshseatcount;
+                        // if(isset($_POST['count'])) {
+                        //  echo $_POST['count'];
+                        // } else {
+                        //      echo "nothing";
+                        // }
                         ?>
                         </td>
                         <td>
                         <?php
-                        if(isset($_POST['totalcost'])) {
-                         echo $_POST['totalcost'];
-                        } else {
-                             echo "nothing";
-                        }
+                        echo "Total cost: ";
+                        echo $seshseatcost;
+                        // if(isset($_POST['totalcost'])) {
+                        //  echo $_POST['totalcost'];
+                        // } else {
+                        //      echo "nothing";
+                        // }
                         ?>
                         </td>
                     </tr>   
@@ -84,6 +88,8 @@
 
     <div id="homebuttons">
     <a href="seatsbooking.php?id=<?php echo $seshShowId ?>"><button id="confirmationbutt">GO BACK</button></a>
+    <!-- <button onclick="history.go(-1);" id="confirmationbutt">GO BACK</button> -->
+    
     <a href="payment.php"><button id="confirmationbutt">PROCEED TO PAYMENT</button></a>
     </div>
     </div>

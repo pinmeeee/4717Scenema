@@ -17,6 +17,20 @@
 		$seshseatId = $_SESSION['seatsid'];
 	}
 
+	if (isset($_POST['count'])){
+		$_SESSION['count'] = $_POST['count'];
+		$seshseatcount = $_SESSION['count'];
+	}else{
+		$seshseatcount = $_SESSION['count'];
+	}
+
+	if (isset($_POST['totalcost'])){
+		$_SESSION['totalcost'] = $_POST['totalcost'];
+		$seshseatcost = $_SESSION['totalcost'];
+	}else{
+		$seshseatcost = $_SESSION['totalcost'];
+	}
+
 	
 	// echo "DATA IN SESSION: ";
 	// echo "Session id is ";
